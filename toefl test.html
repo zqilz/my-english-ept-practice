@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprehensive EPT/TOEFL-Level Practice Test (300 Questions)</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --surface-alt: #f0f2f6;
+      --border: #d8dee8;
+      --text: #1b2430;
+      --text-muted: #526071;
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --primary-soft: #eff6ff;
+      --accent: #0f766e;
+      --accent-soft: #f0fdfa;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --warn-text: #92400e;
+      --danger: #b91c1c;
+      --danger-soft: #fef2f2;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 20px 18px 80px;
+    }
+
+    header.hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    header.hero h1 {
+      margin: 0 0 8px;
+      font-size: 1.65rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    header.hero p {
+      margin: 0 0 12px;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    .notice-box {
+      background: var(--warn-bg);
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--warn-border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--warn-text);
+      font-size: 0.92rem;
+    }
+
+    .notice-box strong {
+      color: #78350f;
+    }
+
+    /* Sticky toolbar */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+      margin-bottom: 20px;
+    }
+
+    .toolbar-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .progress-wrap {
+      flex: 1 1 260px;
+      min-width: 220px;
+    }
+
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .save-status {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 9px;
+      background: var(--surface-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transition: width 0.25s ease;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 0.86rem;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover:not(:disabled) {
+      background: var(--surface-alt);
+      border-color: #b8c2d1;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .btn-accent:hover:not(:disabled) {
+      background: #115e59;
+      border-color: #115e59;
+    }
+
+    .btn-danger {
+      color: var(--danger);
+      border-color: #fecaca;
+      background: var(--danger-soft);
+    }
+
+    .btn-danger:hover:not(:disabled) {
+      background: #fee2e2;
+      border-color: #fca5a5;
+    }
+
+    .btn-active {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .section-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tab-btn {
+      border: 1px solid var(--border);
+      background: var(--surface-alt);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: #94a3b8;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .tab-count {
+      font-size: 0.76rem;
+      opacity: 0.85;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tab-btn.done:not(.active) {
+      background: var(--accent-soft);
+      border-color: #99f6e4;
+      color: var(--accent);
+    }
+
+    .audio-player {
+      width: 100%;
+      max-width: 420px;
+      height: 36px;
+      display: block;
+    }
+
+    /* Section blocks */
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+    }
+
+    .section-header {
+      border-bottom: 2px solid var(--surface-alt);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .section-header h2 {
+      margin: 0 0 6px;
+      font-size: 1.3rem;
+    }
+
+    .section-directions {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    .part-title {
+      margin: 22px 0 12px;
+      padding: 8px 12px;
+      background: var(--surface-alt);
+      border-left: 4px solid var(--primary);
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    /* Listening stimulus / TTS controls */
+    .listening-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding: 10px 14px;
+      background: var(--primary-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+
+    .stimulus-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+    }
+
+    .stimulus-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .stimulus-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--primary-hover);
+    }
+
+    .stimulus-body p {
+      margin: 0 0 8px;
+    }
+
+    .stimulus-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .stimulus-body.hidden-script {
+      display: none;
+    }
+
+    .hidden-script-placeholder {
+      padding: 10px 12px;
+      background: var(--surface-alt);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-style: italic;
+    }
+
+    /* Question card */
+    .question-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 15px 17px;
+      margin-bottom: 14px;
+      background: #fff;
+      transition: border-color 0.15s ease;
+    }
+
+    .question-card.answered {
+      border-left: 4px solid var(--accent);
+    }
+
+    .question-card.unanswered-highlight {
+      border-color: var(--warn-border);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+    }
+
+    .q-stem {
+      font-size: 0.98rem;
+      margin-bottom: 12px;
+    }
+
+    .q-num {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--primary-hover);
+      margin-right: 6px;
+    }
+
+    .dialogue-block {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      font-size: 0.93rem;
+    }
+
+    .dialogue-block div {
+      margin-bottom: 4px;
+    }
+
+    .dialogue-block div:last-child {
+      margin-bottom: 0;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 8px;
+    }
+
+    .options-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .opt-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 0.93rem;
+      background: #fff;
+      transition: all 0.12s ease;
+      user-select: none;
+    }
+
+    .opt-label:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+
+    .opt-label.selected {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: #0f172a;
+      font-weight: 500;
+    }
+
+    .opt-label input[type="radio"] {
+      margin-top: 3px;
+      accent-color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .opt-key {
+      font-weight: 700;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .opt-label.selected .opt-key {
+      color: var(--primary);
+    }
+
+    /* Section 3 inline error identification spans */
+    .err-span {
+      display: inline;
+      background: #eef2ff;
+      border-bottom: 2px solid #6366f1;
+      padding: 1px 4px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .err-span.selected-span {
+      background: #dbeafe;
+      border-bottom-color: var(--primary);
+      color: var(--primary-hover);
+    }
+
+    .err-badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #4338ca;
+      margin-right: 2px;
+    }
+
+    /* Reading Comprehension 2-column layout */
+    .reading-group {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 24px;
+      background: #fcfcfd;
+    }
+
+    .reading-group-title {
+      margin: 0 0 14px;
+      font-size: 1.12rem;
+      color: var(--primary-hover);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .reading-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .passage-pane {
+      position: sticky;
+      top: 112px;
+      max-height: calc(100vh - 132px);
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 0.95rem;
+      line-height: 1.68;
+    }
+
+    .passage-pane p {
+      margin: 0 0 12px;
+    }
+
+    .passage-pane p:last-child {
+      margin-bottom: 0;
+    }
+
+    .insert-square {
+      display: inline-block;
+      background: #fef3c7;
+      border: 1px solid #f59e0b;
+      color: #92400e;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 0 5px;
+      border-radius: 4px;
+      margin: 0 2px;
+    }
+
+    @media (max-width: 920px) {
+      .reading-split {
+        grid-template-columns: 1fr;
+      }
+      .passage-pane {
+        position: static;
+        max-height: none;
+      }
+    }
+
+    /* Bottom Export & LLM Evaluation Card */
+    .export-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      margin-top: 28px;
+    }
+
+    .export-card.unlocked {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, #ffffff 0%, #f0fdfa 100%);
+    }
+
+    .export-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+    }
+
+    .export-status {
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-size: 0.94rem;
+    }
+
+    .export-status.locked {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .export-status.ready {
+      background: var(--accent-soft);
+      border: 1px solid #99f6e4;
+      color: #115e59;
+      font-weight: 600;
+    }
+
+    .prompt-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 14px 16px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.86rem;
+      line-height: 1.5;
+      margin: 12px 0;
+      position: relative;
+      white-space: pre-wrap;
+    }
+
+    .llm-steps {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    .llm-steps li {
+      margin-bottom: 6px;
+    }
+
+    .empty-filter-msg {
+      padding: 24px;
+      text-align: center;
+      color: var(--text-muted);
+      background: var(--surface-alt);
+      border-radius: 8px;
+      font-size: 0.94rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Comprehensive EPT/TOEFL-Level English Practice Test (300 Questions)</h1>
+      <p>
+        Assesses academic English proficiency across five sections: Listening Comprehension (audio-based),
+        Structure, Written Expression, Academic Vocabulary &amp; Discourse, and Reading Comprehension.
+        Recommended pacing: ~3 hours and 30 minutes. Your progress is automatically saved as you work.
+      </p>
+      <div class="notice-box">
+        <strong>Important — No Answer Keys Provided:</strong> This website intentionally does <strong>not</strong> include answer keys or automated grading.
+        Once you have answered all 300 questions, an export button will become available at the bottom of the page so you can download your complete test &amp; answers as a <code>.txt</code> file and evaluate them using an LLM (<strong>aistudio.google.com</strong> — <em>not</em> the Gemini App — or <strong>claude.ai</strong>).
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <div class="toolbar-top">
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progressText">0 / 300 answered (0%)</span>
+            <span id="saveStatus" class="save-status"></span>
+          </div>
+          <div class="progress-track">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </div>
+        <div class="toolbar-actions">
+          <div class="timer-pill">
+            <span id="timerDisplay">00:00:00</span>
+            <button type="button" class="btn" id="timerToggleBtn" style="padding: 2px 8px; font-size: 0.78rem;">Start</button>
+          </div>
+          <button type="button" class="btn" id="filterUnansweredBtn">Unanswered Only</button>
+          <button type="button" class="btn btn-primary" id="jumpNextBtn">Next Unanswered</button>
+          <button type="button" class="btn btn-danger" id="resetBtn">Reset Progress</button>
+        </div>
+      </div>
+      <div class="section-tabs" id="sectionTabs"></div>
+    </div>
+
+    <main id="testRoot"></main>
+
+    <section class="export-card" id="exportCard">
+      <h2>Test Completion &amp; LLM Evaluation</h2>
+      <div class="notice-box" style="margin-bottom: 14px;">
+        <strong>No Answer Key on This Site:</strong> Answer keys are not stored or shown here. Use an external LLM to score your exported file, explain errors, and build a targeted study plan.
+      </div>
+      <div id="exportStatusArea"></div>
+
+      <div id="exportButtonContainer" style="margin: 16px 0;"></div>
+
+      <div>
+        <strong>How to Grade &amp; Review Your Test:</strong>
+        <ol class="llm-steps">
+          <li>Complete all <strong>300 questions</strong> so the <strong>Export Answers (.txt)</strong> button appears above, then download your <code>.txt</code> file.</li>
+          <li>Open <a href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer"><strong>aistudio.google.com</strong></a> (use Google AI Studio rather than the standard Gemini App for full-file, high-context grading) or <a href="https://claude.ai" target="_blank" rel="noopener noreferrer"><strong>claude.ai</strong></a>.</li>
+          <li>Upload your exported <code>.txt</code> file and paste the prompt below:</li>
+        </ol>
+        <div class="prompt-box" id="llmPromptText">Acting as an expert tutor, evaluate my EPT practice test. Provide:
+1. My test score (xxx/300).
+2. My estimated EPT score (on the 0-677 scale).
+3. Each wrong answer, the correct answer, and a brief explanation of why it is correct.
+4. A concise, actionable study guide targeting my specific weak spots.</div>
+        <button type="button" class="btn" id="copyPromptBtn">Copy Prompt</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const STORAGE_KEY = "ept-toefl_practice_test_v1";
+
+      const SECTIONS = [
+        {
+          id: "sec1",
+          short: "Sec 1: Listening",
+          title: "Section 1: Listening Comprehension (Questions 1–30)",
+          directions: "For this section, have a study partner read each dialogue, conversation, or lecture aloud once, or use the built-in browser Text-to-Speech / Blind Listening Mode without reading the text ahead of time. Then choose the best answer (A), (B), (C), or (D) for each question.",
+          start: 1,
+          end: 30
+        },
+        {
+          id: "sec2",
+          short: "Sec 2: Structure",
+          title: "Section 2: Structure — Sentence Completion (Questions 31–110)",
+          directions: "Choose the word or phrase (A), (B), (C), or (D) that best completes the sentence.",
+          start: 31,
+          end: 110
+        },
+        {
+          id: "sec3",
+          short: "Sec 3: Written Expr.",
+          title: "Section 3: Written Expression — Error Identification (Questions 111–190)",
+          directions: "In each sentence, four words or phrases are marked (A), (B), (C), and (D). Identify the one marked segment that must be changed for the sentence to be grammatically correct.",
+          start: 111,
+          end: 190
+        },
+        {
+          id: "sec4",
+          short: "Sec 4: Vocab & Discourse",
+          title: "Section 4: Academic Vocabulary & Discourse Coherence (Questions 191–240)",
+          directions: "Choose the word or phrase (A), (B), (C), or (D) that best completes each sentence in terms of academic meaning, precision, and discourse flow.",
+          start: 191,
+          end: 240
+        },
+        {
+          id: "sec5",
+          short: "Sec 5: Reading",
+          title: "Section 5: Reading Comprehension (Questions 241–300)",
+          directions: "Read each academic passage carefully and choose the best answer (A), (B), (C), or (D) for each question.",
+          start: 241,
+          end: 300
+        }
+      ];
+
+      // Shared stimuli for Section 1 (Part B & C) and Section 5 (Passages 1-6)
+      const STIMULI = {
+        conv1: {
+          title: "Conversation 1 (Questions 11–15)",
+          lines: [
+            "*Student:* Excuse me, Ms. Alvarez, I received an automated email saying my graduation audit is on hold because of an unresolved thesis formatting issue.",
+            "*Advisor:* Let's pull up your file. Oh, I see—the Graduate School flagged your bibliography and margin widths. They require a 1.5-inch binding margin on the left side of every page, including appendices.",
+            "*Student:* Really? I used the template from the department website, and it defaulted to one-inch margins all around.",
+            "*Advisor:* That template hasn't been updated since last year's policy revision. Also, your bibliography mixes Chicago and APA styles in chapters three and four.",
+            "*Student:* Oh no, I merged two earlier papers into those chapters and must have missed the citations. How soon do I need to resubmit the PDF so I can still walk at commencement in May?",
+            "*Advisor:* The absolute cutoff for degree clearance is April 18. If you upload the corrected version by Monday, the reviewer can re-evaluate it within three business days."
+          ]
+        },
+        conv2: {
+          title: "Conversation 2 (Questions 16–20)",
+          lines: [
+            "*Student:* Hi, Dr. Kim. Our team is running infrared spectroscopy on the polymer samples, and the baseline keeps drifting downward after ten minutes.",
+            "*Coordinator:* Have you purged the sample chamber with dry nitrogen before running your scans?",
+            "*Student:* We did a five-minute purge at the start of the session, just like the manual says.",
+            "*Coordinator:* Atmospheric moisture and carbon dioxide can still seep in if the gasket around the sample compartment lid isn't seating properly. That rubber seal was looking brittle last week.",
+            "*Student:* Now that you mention it, the latch felt unusually loose when I closed it. Should we replace the gasket ourselves?",
+            "*Coordinator:* No, maintenance has to install the high-vacuum seal, and they won't be here until tomorrow morning. In the meantime, you can use Instrument B in Room 204—just remember to run a background scan between every third sample."
+          ]
+        },
+        lec1: {
+          title: "Lecture 1: Linguistics — Whistled Languages (Questions 21–25)",
+          lines: [
+            "*Professor:* Today we'll examine a remarkable adaptation in human communication: whistled speech. Found in roughly eighty communities worldwide—often in mountainous terrain or dense forests—whistled languages aren't independent languages with their own grammar. Rather, they are acoustic translations of existing spoken languages, designed to carry messages over distances of up to several kilometers where shouting would dissipate.",
+            "Take Silbo Gomero, used on the Canary Island of La Gomera, which translates Spanish into whistled pitches. Because Spanish isn't a tonal language, Silbo Gomero encodes vowels through distinct pitch levels and renders consonants through rapid pitch transitions, interruptions, and contour changes. A skilled whistler compresses the complex spectral frequencies of speech into a single, piercing frequency band that resists wind interference and echoes clearly across deep ravines.",
+            "Interestingly, brain imaging studies reveal that fluent Silbo Gomero speakers process these whistles in the same left-hemisphere language centers used for spoken words, whereas non-speakers perceive them simply as musical tones. Today, however, mobile telecommunications have diminished the practical necessity of whistled speech, prompting UNESCO and local schools to institute mandatory instruction to prevent Silbo Gomero from vanishing altogether."
+          ]
+        },
+        lec2: {
+          title: "Lecture 2: Ecology — Mycorrhizal Networks (Questions 26–30)",
+          lines: [
+            "*Professor:* When we walk through a temperate forest, it's easy to view individual trees as solitary competitors battling for sunlight and water. Yet beneath the forest floor lies an intricate subterranean economy mediated by mycorrhizal fungi. Over ninety percent of terrestrial plant species form symbiotic associations with these fungi, whose microscopic filaments—called hyphae—fuse with plant roots.",
+            "This partnership is fundamentally transactional: trees fix carbon through photosynthesis and transfer sugars down to the fungi, which cannot produce their own food. In return, the vast fungal network extends the tree's effective root surface area by orders of magnitude, scavenging phosphorus, nitrogen, and water from microscopic soil pores inaccessible to thick tree roots.",
+            "Recent isotopic tracing experiments have complicated this picture even further. Researchers discovered that these fungal threads link multiple trees—sometimes of completely different species—into what ecologists term \"common mycorrhizal networks.\" Carbon tagged in a sunlit canopy birch has been detected days later inside a shaded understory fir, suggesting a net flow of resources from surplus to deficit. While some scientists warn against overly romanticizing forests as purely altruistic communities—noting that fungi may distribute nutrients to maximize their own survival—there is little doubt that underground fungal architecture profoundly shapes forest resilience."
+          ]
+        },
+        p1: {
+          title: "Passage 1: The Burgess Shale and the Cambrian Explosion (Questions 241–250)",
+          paragraphs: [
+            "**Paragraph 1:** Roughly 541 million years ago, the fossil record registers an astonishing burst of evolutionary diversification known as the Cambrian Explosion. Within a geologically brief span of twenty to twenty-five million years, nearly all major animal phyla—the fundamental body plans of modern creatures—emerged in Earth's oceans. Before this interval, life consisted largely of microscopic single-celled organisms and soft-bodied Ediacaran forms whose affinities to living animals remain fiercely debated.",
+            "**Paragraph 2:** Much of our detailed knowledge of Cambrian marine life comes not from ordinary fossil beds, which preserve only mineralized shells and bones, but from exceptional sites called *Lagerstätten*. Chief among these is the Burgess Shale in the Canadian Rockies, discovered by Charles Doolittle Walcott in 1909. [A] Because soft tissues normally decay within days of an organism's death, fossilization of delicate appendages, digestive tracts, and eyes requires extraordinary burial conditions. [B] At the Burgess Shale, periodic underwater mudslides swept entire benthic communities from a shallow carbonate reef down into oxygen-depleted deeper waters. [C] Deprived of oxygen and shielded from scavengers, bacteria could not fully decompose the buried organisms before clay minerals coated and stabilized their tissues as thin carbonaceous films. [D]",
+            "**Paragraph 3:** Early interpretations treated Burgess Shale creatures as primitive ancestors neatly fitting into modern taxonomic groups. However, meticulous re-examinations begun in the 1970s by Harry Whittington and colleagues overturned that view. Using delicate needles to excavate fossils millimeter by millimeter in three dimensions, researchers revealed bizarre anatomies—such as *Opabinia* with five stalked eyes and a flexible nozzle, or *Hallucigenia* with dorsal spines. While later discoveries eventually linked several of these enigmatic forms to early arthropods and velvet worms, the Burgess Shale underscores that early animal evolution involved sweeping anatomical experimentation, much of which vanished without leaving modern descendants."
+          ]
+        },
+        p2: {
+          title: "Passage 2: The Durability of Roman Marine Concrete (Questions 251–260)",
+          paragraphs: [
+            "**Paragraph 1:** Modern Portland cement concrete, the backbone of contemporary infrastructure, frequently begins deteriorating within decades when exposed to saltwater. Chloride ions penetrate microscopic pores, corroding internal steel reinforcement and causing the concrete to crack and spall. By contrast, harbor breakwaters, piers, and seawalls built by ancient Roman engineers two millennia ago remain structurally intact despite relentless pounding by Mediterranean waves.",
+            "**Paragraph 2:** For decades, materials scientists puzzled over the secret behind this longevity. Roman builders did not use pure Portland cement; instead, as described by the architect Vitruvius in the first century BCE, they mixed slaked lime with *pozzolana*—volcanic ash originally quarried near Mount Vesuvius—along with chunks of volcanic tuff and seawater. Until recently, researchers assumed that the volcanic ash simply reacted rapidly with lime at ambient temperatures to form a dense, impermeable binder.",
+            "**Paragraph 3:** However, X-ray micro-diffraction studies at synchrotron facilities revealed a far more dynamic chemical process. [A] Seawater infiltrating Roman marine structures did not weaken the mortar; rather, it dissolved leftover volcanic ash and lime, triggering the growth of rare aluminous tobermorite and phillipsite crystals inside microscopic voids. [B] As these interlocking mineral fibers crystallized over centuries, they reinforced the concrete matrix from within, effectively healing nascent micro-cracks before waves could widen them. [C] Furthermore, hot-mixing techniques—combining quicklime directly with dry volcanic ash and water—generated tiny, reactive lime clasts that served as long-term calcium reservoirs for self-healing. [D] Today, civil engineers are experimenting with volcanic ash blends modeled on Roman recipes to construct low-carbon seawalls that strengthen over time rather than decay."
+          ]
+        },
+        p3: {
+          title: "Passage 3: Hydrothermal Vent Ecosystems and Chemosynthesis (Questions 261–270)",
+          paragraphs: [
+            "**Paragraph 1:** Until the late 1970s, marine biology rested on an unchallenged axiom: all complex ecosystems on Earth ultimately rely on sunlight. Even organisms inhabiting the pitch-black abyssal plains were thought to survive solely on \"marine snow\"—organic detritus drifting down from sunlit surface waters. That assumption shattered in 1977 when scientists aboard the submersible *Alvin* explored the Galápagos Rift at depths exceeding 2,500 meters and discovered thriving colonies of giant tubeworms, blind shrimp, and white clams clustered around superheated hydrothermal vents.",
+            "**Paragraph 2:** Hydrothermal vents form along mid-ocean ridges where tectonic plates pull apart. Cold seawater percolates deep into fractures in the basaltic crust, heats up near magma chambers to temperatures above 350°C, and leaches dissolved minerals and hydrogen sulfide from surrounding rock before gushing back into the frigid ocean. Although hydrogen sulfide is acutely toxic to most surface animals, specialized chemolithoautotrophic bacteria utilize the chemical energy stored in its molecular bonds to convert dissolved carbon dioxide into organic sugars—a process called chemosynthesis.",
+            "**Paragraph 3:** These bacteria form the base of an astonishingly productive food web independent of solar radiation. [A] Some microbes live freely in vent plumes, where grazing shrimp and crabs harvest them directly. [B] Others enter intimate endosymbiotic partnerships with invertebrates such as the giant tubeworm *Riftia pachyptila*, which can grow over two meters tall despite lacking a mouth, digestive tract, or anus. [C] Instead, *Riftia* absorbs hydrogen sulfide and oxygen through its bright red plume and transports them via specialized hemoglobin to a massive internal organ called the trophosome, packed with billions of symbiotic bacteria. [D] Because individual vents can go extinct within decades as magma shifts beneath the seafloor, vent larvae must disperse across vast expanses of barren ocean floor to colonize newly formed vents."
+          ]
+        },
+        p4: {
+          title: "Passage 4: Memory Consolidation and the Spacing Effect (Questions 271–280)",
+          paragraphs: [
+            "**Paragraph 1:** Students preparing for high-stakes examinations frequently rely on \"cramming\"—concentrating hours of intense study into a single session immediately before the test. While massed practice can produce impressive recall over short intervals, cognitive psychologists have demonstrated for over a century that distributing study sessions across days or weeks—a phenomenon termed the *spacing effect*—yields dramatically superior long-term retention. First documented systematically by Hermann Ebbinghaus in 1885, the spacing effect remains one of the most robust findings in human memory research, holding true across verbal facts, motor skills, and complex problem-solving.",
+            "**Paragraph 2:** Several complementary theories explain why spaced repetition outperforms massed practice. [A] According to the *encoding variability* hypothesis, encounters separated by time occur within slightly different mental and environmental contexts, creating multiple retrieval cues that make the memory easier to access later. [B] A second account, *study-phase retrieval theory*, proposes that partial forgetting between sessions is actually beneficial. [C] When a learner struggles slightly to reconstruct a partially faded concept during a second session, the neural pathway supporting that memory is strengthened far more effectively than when the item remains effortlessly active in working memory. [D]",
+            "**Paragraph 3:** Neurobiological research adds a cellular dimension to these behavioral models. Forming durable declarative memories requires *systems consolidation*, a gradual process during which fragile traces initially encoded in the hippocampus are reorganized and stabilized across neocortical networks—largely during slow-wave sleep. Repeatedly reactivating a memory across multiple sleep-wake cycles allows synaptic protein synthesis to solidify structural connections between neurons. Consequently, massing study into a single marathon night deprives the brain of the repeated sleep-dependent consolidation cycles needed to transfer knowledge into permanent storage."
+          ]
+        },
+        p5: {
+          title: "Passage 5: Detecting Exoplanets via Transit Photometry (Questions 281–290)",
+          paragraphs: [
+            "**Paragraph 1:** Observing planets orbiting distant stars directly is extraordinarily difficult: a host star typically outshines an orbiting Earth-sized planet by a factor of ten billion in visible light. Rather than trying to photograph faint worlds directly against blinding stellar glare, astronomers have achieved far greater success using indirect techniques. Among the most productive of these is *transit photometry*, the primary method employed by NASA's Kepler and TESS space telescopes to discover thousands of confirmed exoplanets.",
+            "**Paragraph 2:** Transit photometry relies on measuring tiny, periodic dips in a star's apparent brightness as an orbiting planet passes directly between the star and Earth. [A] Because a Jupiter-sized gas giant blocks roughly one percent of a Sun-like star's disk, whereas an Earth-sized rocky world blocks less than one-hundredth of a percent, measuring the depth of the brightness dip directly reveals the planet's radius relative to its star. [B] Furthermore, the time interval between consecutive transits establishes the planet's orbital period, which—combined with stellar mass—allows astronomers to calculate its orbital distance using Kepler's laws of planetary motion. [C] During a transit, a minuscule fraction of starlight also filters through the planet's upper atmosphere, imprinting chemical absorption signatures that space-based spectrographs can decode to detect water vapor, methane, or carbon dioxide. [D]",
+            "**Paragraph 3:** Despite its extraordinary sensitivity, transit photometry suffers from an inherent geometric bias. A transit can only be observed if the planet's orbital plane happens to align nearly edge-on with our line of sight—an alignment occurring for fewer than one percent of Earth-like orbits around Sun-like stars. Moreover, confirming that a brightness dip represents a true planet rather than an eclipsing binary star or stellar sunspot requires multiple observed transits and follow-up radial-velocity measurements, which favor large planets orbiting close to their host stars."
+          ]
+        },
+        p6: {
+          title: "Passage 6: Reassessing the Dutch Tulip Mania (Questions 291–300)",
+          paragraphs: [
+            "**Paragraph 1:** Few episodes in economic history enjoy a livelier reputation than the Dutch \"tulip mania\" of 1636–1637. Popularized in Charles Mackay's 1841 bestseller *Extraordinary Popular Delusions and the Madness of Crowds*, the traditional narrative depicts an entire nation gripped by irrational frenzy: supposedly, ordinary artisans mortgaged homes to buy single tulip bulbs worth more than luxury estates before prices collapsed overnight in February 1637, plunging the Dutch Republic into economic ruin.",
+            "**Paragraph 2:** Over the past two decades, however, economic historians have subjected this vivid legend to rigorous archival scrutiny—and found it largely exaggerated. [A] Examining notary records, guild registries, and bankruptcy filings in Haarlem and Amsterdam, researcher Anne Goldgar discovered that active tulip trading was concentrated among a relatively small circle of wealthy merchants and skilled florists, rather than sweeping up the broader working class. [B] Moreover, the astronomical prices quoted in pamphlets almost always pertained to rare, virus-infected \"broken\" bulbs whose striped petals could not be reliably reproduced from seed, making them genuine collector luxuries akin to fine paintings. [C] Even at the peak of the market, most trades occurred through futures contracts requiring minimal upfront cash, meaning few buyers actually parted with houses or life savings. [D]",
+            "**Paragraph 3:** Equally telling is the aftermath of the February 1637 crash. Far from triggering widespread bankruptcies or derailing the Dutch Golden Age, the collapse had negligible macroeconomic impact on trade, banking, or employment. Why, then, did the myth of universal madness endure? Historians point to seventeenth-century Calvinist moralists who authored satirical pamphlets condemning speculative greed, stories later uncritically recycled by nineteenth-century writers eager to warn against modern stock market bubbles."
+          ]
+        }
+      };
+
+      // All 300 questions
+      const QUESTIONS = [
+        // Section 1: Listening Part A (1-10)
+        { n: 1, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Man:* Did Professor Vance approve your proposal for the archival research grant?", "*Woman:* She didn't reject it outright, though she suggested I narrow the chronological scope before the final committee meets."], text: "What does the woman imply about her proposal?", opts: ["It has already been funded by the committee.", "It requires revision prior to formal review.", "Professor Vance disagreed with the methodology.", "The research timeline is too brief."] },
+        { n: 2, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Woman:* I'm surprised the university bookstore is already out of the organic chemistry lab manual.", "*Man:* Well, with three new sections added at the last minute, they could hardly have anticipated the demand."], text: "What does the man mean?", opts: ["The bookstore ordered fewer manuals than usual.", "Enrollment expanded unexpectedly.", "The lab sections were canceled due to shortages.", "Students were notified too late to buy books."] },
+        { n: 3, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Man:* Should I submit the supplementary portfolio along with my fellowship application?", "*Woman:* It's technically optional, yet very few successful candidates in this department omit it."], text: "What does the woman advise the man to do?", opts: ["Skip the portfolio to save time.", "Ask the department for an exemption.", "Include the portfolio in his application.", "Apply to a different fellowship program."] },
+        { n: 4, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Woman:* I thought you were planning to spend the semester abroad in Lyon.", "*Man:* I was, until I realized none of my upper-division engineering credits would transfer back here."], text: "Why did the man change his plans?", opts: ["His French proficiency was insufficient.", "The program in Lyon was discontinued.", "His degree progress would have been delayed.", "The engineering department denied him leave."] },
+        { n: 5, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Man:* Have the results from the soil contamination assay come back from the lab yet?", "*Woman:* Not yet—the mass spectrometer has been down for recalibration since Tuesday morning."], text: "What does the woman mean?", opts: ["The soil samples were contaminated in transit.", "Equipment maintenance is delaying the test results.", "The lab lost the samples on Tuesday.", "The spectrometer showed abnormal readings."] },
+        { n: 6, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Woman:* You've been staring at that dataset for hours. Why not call it a night?", "*Man:* If I don't reconcile these outliers before tomorrow's seminar, my whole presentation will fall apart."], text: "What can be inferred about the man?", opts: ["He intends to postpone his seminar.", "He feels pressured to fix discrepancies in his data.", "He has already finished preparing his slides.", "He disagrees with the seminar's main topic."] },
+        { n: 7, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Man:* Did Maya get the teaching assistantship she interviewed for?", "*Woman:* Actually, she turned it down after receiving a research stipend that doesn't require grading papers."], text: "What happened to Maya?", opts: ["She accepted an offer with no teaching duties.", "She failed the teaching assistantship interview.", "She plans to grade papers for extra income.", "She declined both the assistantship and the stipend."] },
+        { n: 8, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Woman:* Do you think Dr. Patel will extend the deadline for the literature review?", "*Man:* Given how strictly he enforced the cutoff for the midterm paper, I wouldn't count on it."], text: "What does the man imply about Dr. Patel?", opts: ["He frequently changes assignment deadlines.", "He is unlikely to grant an extension.", "He prefers literature reviews over midterm papers.", "He forgot to announce the submission date."] },
+        { n: 9, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Man:* This auditorium has terrible acoustics; I could barely catch half of the keynote address.", "*Woman:* Tell me about it. Whoever designed this hall clearly prioritized aesthetics over functionality."], text: "How does the woman feel about the auditorium?", opts: ["She disagrees with the man's complaint.", "She thinks the speaker spoke too softly.", "She shares the man's frustration with the sound quality.", "She admires the hall's functional design."] },
+        { n: 10, sec: "sec1", part: "Part A: Short Dialogues", dialogue: ["*Woman:* Are you taking the shuttle to the botanical conservatory this afternoon?", "*Man:* Normally I would, but the route's been detoured because of the water main break on Elm Street."], text: "What will the man probably do?", opts: ["Wait for the shuttle on Elm Street.", "Repair the water line near the conservatory.", "Find an alternative way to get to the conservatory.", "Cancel his visit to the botanical conservatory."] },
+
+        // Section 1: Listening Part B (11-20)
+        { n: 11, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv1", text: "Why did the student visit the advisor?", opts: ["To request an extension for commencement.", "To clarify why his graduation clearance was halted.", "To ask how to write an appendix.", "To complain about his thesis committee."] },
+        { n: 12, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv1", text: "What caused the margin error in the student's thesis?", opts: ["He ignored the Graduate School handbook intentionally.", "He downloaded an outdated departmental template.", "His PDF converter altered the page layout.", "The appendices exceeded the page limit."] },
+        { n: 13, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv1", text: "Why were citation styles inconsistent in chapters three and four?", opts: ["Two different editors proofread the manuscript.", "The department allows either style in those chapters.", "Material from prior manuscripts was combined without standardizing citations.", "Automated software corrupted the bibliography."] },
+        { n: 14, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv1", text: "What is the purpose of the wider left margin?", opts: ["To accommodate physical binding.", "To leave space for committee comments.", "To distinguish appendices from main chapters.", "To standardize digital PDF viewing."] },
+        { n: 15, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv1", text: "By what date must all graduation requirements be finalized?", opts: ["Next Monday.", "In three business days.", "April 18.", "Early May."] },
+
+        { n: 16, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv2", text: "What problem is the student experiencing in the lab?", opts: ["The polymer samples are melting during testing.", "The spectroscopy readings show an unstable baseline.", "The nitrogen tank is completely empty.", "The computer software refuses to save scans."] },
+        { n: 17, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv2", text: "What does Dr. Kim suspect is causing the issue?", opts: ["An inadequate initial purge time.", "Contamination within the polymer itself.", "A worn seal allowing ambient air into the chamber.", "Incorrect calibration of the infrared laser."] },
+        { n: 18, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv2", text: "What detail supports Dr. Kim's hypothesis?", opts: ["The student noticed the compartment latch did not shut tightly.", "The manual warns against testing polymers for ten minutes.", "Room 204 had the exact same problem last week.", "The nitrogen valve was left open overnight."] },
+        { n: 19, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv2", text: "Why can't the student repair the equipment today?", opts: ["Replacement gaskets are out of stock.", "Only maintenance personnel are authorized to install the seal.", "The lab closes before the seal can dry.", "Dr. Kim needs the instrument for her own research."] },
+        { n: 20, sec: "sec1", part: "Part B: Longer Conversations", stim: "conv2", text: "What does Dr. Kim instruct the student to do when using Instrument B?", opts: ["Purge the chamber for fifteen minutes.", "Test only three polymer samples total.", "Perform periodic background scans during testing.", "Wait until maintenance inspects Room 204."] },
+
+        // Section 1: Listening Part C (21-30)
+        { n: 21, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec1", text: "What is the primary topic of the lecture?", opts: ["How tonal languages evolved in island communities.", "The structure, function, and preservation of whistled speech.", "Acoustic disadvantages of living in mountainous regions.", "Differences between Spanish and non-tonal dialects."] },
+        { n: 22, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec1", text: "According to the professor, what is true about whistled languages?", opts: ["They possess a separate vocabulary from spoken languages.", "They are acoustic conversions of existing spoken languages.", "They can only be created from tonal languages.", "They are ineffective in forested environments."] },
+        { n: 23, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec1", text: "How does Silbo Gomero represent Spanish vowels?", opts: ["By varying the duration of silent pauses.", "Through distinct pitch levels.", "By altering the volume of each syllable.", "Through rapid interruptions in airflow."] },
+        { n: 24, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec1", text: "What did brain imaging studies show about fluent Silbo Gomero speakers?", opts: ["They process whistles using regions associated with spoken language.", "They rely primarily on the right hemisphere to decode pitch.", "Their auditory cortex differs structurally from non-speakers.", "They interpret whistles identically to instrumental music."] },
+        { n: 25, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec1", text: "Why has mandatory school instruction been introduced on La Gomera?", opts: ["To improve students' musical aptitude.", "To prepare students for careers in telecommunications.", "To counteract the decline caused by modern technology.", "To standardize Spanish pronunciation across the island."] },
+
+        { n: 26, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec2", text: "What is the professor's main purpose in this lecture?", opts: ["To explain how photosynthesis varies between birch and fir trees.", "To describe the role and complexity of underground fungal-plant networks.", "To argue that trees do not compete for sunlight.", "To trace the evolutionary origin of soil bacteria."] },
+        { n: 27, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec2", text: "What do trees receive in exchange for supplying sugars to mycorrhizal fungi?", opts: ["Increased access to soil nutrients and water.", "Protection from canopy-dwelling insects.", "Direct carbon transfers from neighboring fungi.", "Faster decomposition of fallen leaves."] },
+        { n: 28, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec2", text: "What did isotopic tracing experiments reveal about common mycorrhizal networks?", opts: ["Fungi only connect trees of the exact same species.", "Carbon can move from one tree species to another via fungal threads.", "Shaded understory trees supply nutrients to canopy trees.", "Hyphae break down when exposed to excess nitrogen."] },
+        { n: 29, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec2", text: "Why does the professor mention scientists' caution against viewing forests as \"purely altruistic\"?", opts: ["To suggest isotopic tracing results were fabricated.", "To highlight that fungal self-interest may drive nutrient distribution.", "To prove that birch trees intentionally starve shaded firs.", "To refute the existence of subterranean hyphae."] },
+        { n: 30, sec: "sec1", part: "Part C: Academic Lectures", stim: "lec2", text: "What does the professor conclude about mycorrhizal networks?", opts: ["They occur in fewer than half of terrestrial ecosystems.", "They are important contributors to forest stability.", "They weaken tree roots over long periods.", "They prevent trees from absorbing phosphorus directly."] },
+
+        // Section 2: Structure (31-110)
+        { n: 31, sec: "sec2", text: "Not until the late nineteenth century _____ widespread acceptance among European geologists.", opts: ["did the theory of continental glaciation gain", "the theory of continental glaciation gained", "gained the theory of continental glaciation", "did gain the theory of continental glaciation"] },
+        { n: 32, sec: "sec2", text: "_____ by heavy sediment loads, the delta has shifted its primary channel several times over the past millennium.", opts: ["Choking", "Having choked", "Choked", "To choke"] },
+        { n: 33, sec: "sec2", text: "The archivist insisted that the fragile parchment manuscripts _____ under strict humidity controls.", opts: ["are stored", "be stored", "were stored", "being stored"] },
+        { n: 34, sec: "sec2", text: "_____ distinguishes obsidian from most other volcanic rocks is its complete lack of crystalline structure.", opts: ["That", "What", "Which", "It"] },
+        { n: 35, sec: "sec2", text: "Seldom _____ such an extraordinary degree of preservation in soft-bodied fossils from the Cambrian period.", opts: ["paleontologists have encountered", "have paleontologists encountered", "encountered paleontologists", "have encountered paleontologists"] },
+        { n: 36, sec: "sec2", text: "Although _____ in arid climates, agave plants possess thick cuticles that minimize evaporative water loss.", opts: ["they cultivating", "cultivating", "cultivated", "to cultivate"] },
+        { n: 37, sec: "sec2", text: "The density of seawater is slightly greater than _____ of pure distilled water at the same temperature.", opts: ["that", "those", "what", "it"] },
+        { n: 38, sec: "sec2", text: "_____ the Federal Reserve raise interest rates aggressively next quarter, short-term borrowing costs for municipalities will climb sharply.", opts: ["If", "Should", "Were", "Had"] },
+        { n: 39, sec: "sec2", text: "So _____ was the acoustic design of the ancient amphitheater in Epidaurus that a whisper on stage could be heard from the highest row.", opts: ["precision", "precisely", "precise", "preciseness"] },
+        { n: 40, sec: "sec2", text: "The baroque harpsichord, _____ strings are plucked rather than struck, produces a crisp, percussive timbre.", opts: ["which", "that", "whose", "whom"] },
+        { n: 41, sec: "sec2", text: "No sooner _____ the harbor than a dense coastal fog obscured the lighthouse beacon.", opts: ["the research vessel had left", "had the research vessel left", "did the research vessel left", "left the research vessel"] },
+        { n: 42, sec: "sec2", text: "_____ to adapt quickly to fluctuating salinity levels, estuarine fish exhibit remarkable physiological plasticity.", opts: ["Requiring", "Required", "Having required", "Require"] },
+        { n: 43, sec: "sec2", text: "The committee's final report focuses not so much on immediate budget cuts _____ on long-term structural reform.", opts: ["than", "as", "but", "rather"] },
+        { n: 44, sec: "sec2", text: "Had the engineers anticipated the thermal expansion of the steel girders, the bridge deck _____ buckled during the heatwave.", opts: ["would not have", "will not have", "would not", "had not"] },
+        { n: 45, sec: "sec2", text: "_____ the complexity of protein folding, computational biologists have turned to deep-learning architectures to predict three-dimensional structures.", opts: ["Given", "Giving", "To give", "Have given"] },
+        { n: 46, sec: "sec2", text: "Only by cross-referencing tree-ring chronologies with ice-core data _____ reconstruct prehistoric drought cycles accurately.", opts: ["climatologists can", "can climatologists", "climatologists able to", "are climatologists"] },
+        { n: 47, sec: "sec2", text: "The more rapidly a glacier retreats, _____ unstable the surrounding moraine slopes become.", opts: ["the most", "the more", "more", "that much"] },
+        { n: 48, sec: "sec2", text: "Constructed between 118 and 125 CE, the Pantheon in Rome remains the largest unreinforced concrete dome _____ built.", opts: ["ever", "never", "still", "already"] },
+        { n: 49, sec: "sec2", text: "Neither the primary sensor array nor the backup telemetry units _____ transmitting data after the solar flare struck.", opts: ["was", "were", "is", "has been"] },
+        { n: 50, sec: "sec2", text: "_____ of the two proposed transit corridors offers significant reductions in peak-hour congestion, according to the feasibility study.", opts: ["Both", "Neither", "All", "Several"] },
+        { n: 51, sec: "sec2", text: "It was the invention of the marine chronometer _____ enabled navigators to determine longitude reliably at sea.", opts: ["which", "what", "that", "whom"] },
+        { n: 52, sec: "sec2", text: "Under no circumstances _____ open the containment chamber while the ultraviolet sterilizer is operating.", opts: ["technicians should", "should technicians", "technicians must", "are technicians"] },
+        { n: 53, sec: "sec2", text: "Margaret Mead's early ethnographic fieldwork in Samoa sparked debates _____ continue to influence cultural anthropology today.", opts: ["who", "what", "that", "whose"] },
+        { n: 54, sec: "sec2", text: "_____ its modest orbital radius, Mercury experiences extreme temperature swings due to the absence of a substantial atmosphere.", opts: ["Despite", "Although", "Even though", "In spite"] },
+        { n: 55, sec: "sec2", text: "By the time the diplomatic delegation arrived in Geneva, the preliminary trade framework _____ six weeks earlier.", opts: ["has been drafted", "had been drafted", "was drafting", "had been drafting"] },
+        { n: 56, sec: "sec2", text: "_____ as a secondary byproduct of coal gasification, coal tar eventually became the foundation of the synthetic dye industry.", opts: ["Originally dismissing", "Having originally dismissed", "Originally dismissed", "To originally dismiss"] },
+        { n: 57, sec: "sec2", text: "The migration routes of Arctic terns span roughly 70,000 kilometers annually, making _____ the longest of any known animal.", opts: ["it", "them", "theirs", "they"] },
+        { n: 58, sec: "sec2", text: "Whether the newly discovered exoplanet harbors liquid water _____ on the composition and thickness of its atmosphere.", opts: ["depend", "depends", "depending", "to depend"] },
+        { n: 59, sec: "sec2", text: "Little _____ that the seemingly inert mineral sample contained trace quantities of a previously unknown isotope.", opts: ["the chemists suspected", "did the chemists suspect", "suspected the chemists", "were the chemists suspecting"] },
+        { n: 60, sec: "sec2", text: "Copper is an indispensable component of electrical wiring, _____ its high ductility and exceptional conductivity.", opts: ["owing to", "because", "since", "as a result"] },
+        { n: 61, sec: "sec2", text: "The symposium brought together historians, urban planners, and economists, _____ presented a distinct perspective on post-industrial recovery.", opts: ["each of them", "each of whom", "all of which", "whom each"] },
+        { n: 62, sec: "sec2", text: "_____ the high cost of desalination, coastal municipalities in arid regions increasingly rely on reverse osmosis plants.", opts: ["Notwithstanding", "Whereas", "Provided that", "Even if"] },
+        { n: 63, sec: "sec2", text: "A thorough audit of the municipal water system is imperative lest undetected lead pipes _____ public health.", opts: ["endanger", "endangered", "will endanger", "endangering"] },
+        { n: 64, sec: "sec2", text: "Rarely _____ in modern architecture that a single structure has integrated passive solar heating so seamlessly.", opts: ["we see", "have we seen", "seen", "did we saw"] },
+        { n: 65, sec: "sec2", text: "The archaeologist carefully cataloged every ceramic shard, _____ where each fragment had lain within the stratigraphic layer.", opts: ["noted", "noting", "to note", "was noting"] },
+        { n: 66, sec: "sec2", text: "Were the central bank _____ quantitative tightening prematurely, inflationary pressures could re-emerge within months.", opts: ["halting", "to halt", "halted", "halt"] },
+        { n: 67, sec: "sec2", text: "Among the many innovations attributed to the Song Dynasty _____ movable type and paper currency.", opts: ["is", "are", "was being", "has"] },
+        { n: 68, sec: "sec2", text: "_____ of the manuscript's authorship has been resolved, scholars remain divided over its intended political audience.", opts: ["Because of the question", "Despite the question", "While the question", "Because the question"] },
+        { n: 69, sec: "sec2", text: "Sound waves travel nearly four times faster in water than _____ in air at standard atmospheric pressure.", opts: ["they do", "it does", "do they", "are they"] },
+        { n: 70, sec: "sec2", text: "Not only _____ the local fishery, the invasive zebra mussel also clogged municipal water intake pipes throughout the basin.", opts: ["it disrupted", "did it disrupt", "disrupted it", "has it disrupted"] },
+        { n: 71, sec: "sec2", text: "The treatise explores the mechanisms _____ medieval guilds regulated craftsmanship, pricing, and apprenticeship standards.", opts: ["by which", "which", "in what", "that"] },
+        { n: 72, sec: "sec2", text: "_____ completely dry, the fresco pigments bond chemically with the lime plaster through a process known as carbonation.", opts: ["Once", "Until", "Unless", "Before"] },
+        { n: 73, sec: "sec2", text: "_____ an estimated three billion base pairs, the human genome required over a decade of international collaboration to sequence.", opts: ["Comprising", "Comprised", "Having comprised of", "To comprise"] },
+        { n: 74, sec: "sec2", text: "There is growing consensus among marine biologists _____ deep-sea trawling causes irreversible damage to cold-water coral reefs.", opts: ["which", "what", "that", "whether"] },
+        { n: 75, sec: "sec2", text: "Hardly had the volcanic eruption subsided _____ botanists began documenting the arrival of pioneer lichens on the cooled lava.", opts: ["than", "when", "until", "since"] },
+        { n: 76, sec: "sec2", text: "The acoustics of a violin depend _____ on the thickness of its spruce soundboard as on the varnish applied to its exterior.", opts: ["as much", "so much", "more", "such"] },
+        { n: 77, sec: "sec2", text: "_____ that early Polynesians navigated vast stretches of the Pacific solely by reading star paths, ocean swells, and bird flight patterns.", opts: ["Anthropologists now recognize", "Recognizing anthropologists", "It is anthropologists recognize", "What anthropologists recognize"] },
+        { n: 78, sec: "sec2", text: "Without the stabilizing gravitational influence of Jupiter, the inner planets _____ far more frequent asteroid impacts over geological time.", opts: ["would have experienced", "will experience", "experienced", "had experienced"] },
+        { n: 79, sec: "sec2", text: "_____ from satellite altimetry indicates that global sea levels have risen faster over the past two decades than during the twentieth century.", opts: ["Evidence derived", "Deriving evidence", "Evidence is derived", "Derived evidence from"] },
+        { n: 80, sec: "sec2", text: "So intricate were the interlocking stone joints at Machu Picchu _____ not even a thin knife blade could fit between them.", opts: ["which", "as", "that", "so"] },
+        { n: 81, sec: "sec2", text: "It is recommended that every participant in the clinical trial _____ a baseline blood panel prior to receiving the placebo or active compound.", opts: ["completes", "complete", "completed", "completing"] },
+        { n: 82, sec: "sec2", text: "_____ the Renaissance did perspective drawing become a codified mathematical discipline rather than an intuitive craft.", opts: ["Not until", "It was not until", "During", "Until"] },
+        { n: 83, sec: "sec2", text: "The novelist's later works, _____ marked by stark minimalism, contrast sharply with the ornate prose of her debut trilogy.", opts: ["whom are", "which are", "are", "that are"] },
+        { n: 84, sec: "sec2", text: "_____ several setbacks during wind-tunnel testing, the aerospace consortium proceeded with the prototype's maiden flight.", opts: ["Although", "In spite of", "Even though", "Regardless"] },
+        { n: 85, sec: "sec2", text: "In addition to _____ a major hub for maritime commerce, thirteenth-century Venice served as a vital conduit for Byzantine scholarship.", opts: ["be", "been", "being", "having"] },
+        { n: 86, sec: "sec2", text: "_____ the sheer volume of astronomical images generated nightly, citizen-science platforms enlist volunteers to classify distant galaxies.", opts: ["To manage", "Managing", "Managed", "For manage"] },
+        { n: 87, sec: "sec2", text: "Nowhere in the temperate world _____ a greater diversity of salamander species than in the southern Appalachian Mountains.", opts: ["there exists", "does there exist", "there is existing", "is existing"] },
+        { n: 88, sec: "sec2", text: "The botanist collected specimens from three distinct elevations, _____ showed marked variation in leaf morphology.", opts: ["all of whom", "each of which", "every of which", "both of which"] },
+        { n: 89, sec: "sec2", text: "_____ as a mere curiosity by eighteenth-century naturalists, electrical phenomena soon revolutionized industrial manufacturing.", opts: ["Dismissing", "Dismissed", "Having dismissed", "To be dismissed"] },
+        { n: 90, sec: "sec2", text: "The museum's new conservation wing is equipped with climate sensors capable of detecting fluctuations _____ one-tenth of a percent in relative humidity.", opts: ["as small as", "so small as", "smaller than", "as smaller as"] },
+        { n: 91, sec: "sec2", text: "_____ the economic recession deepened, consumer spending on nonessential luxury goods contracted disproportionately.", opts: ["During", "As", "For", "Like"] },
+        { n: 92, sec: "sec2", text: "Only after the Rosetta Stone was deciphered _____ to read ancient Egyptian hieroglyphic inscriptions with confidence.", opts: ["scholars were able", "were scholars able", "could scholars able", "scholars could"] },
+        { n: 93, sec: "sec2", text: "_____ that the manuscript dates to the early twelfth century rests primarily on paleographic analysis of its script.", opts: ["The claim", "Claiming", "What claims", "Which claims"] },
+        { n: 94, sec: "sec2", text: "The pharmaceutical compound proved effective in vitro; _____, animal trials revealed unacceptable hepatic toxicity.", opts: ["therefore", "furthermore", "nevertheless", "consequently"] },
+        { n: 95, sec: "sec2", text: "_____ the solar eclipse reach totality, observers along the narrow path will witness the Sun's outer corona directly.", opts: ["Should", "Were", "Had", "If"] },
+        { n: 96, sec: "sec2", text: "Unlike _____ of temperate deciduous trees, the needles of most conifers remain photosynthetically active throughout winter.", opts: ["that", "those", "it", "them"] },
+        { n: 97, sec: "sec2", text: "Having _____ the primary historical archives in Lisbon, the researcher traveled to Seville to examine colonial shipping ledgers.", opts: ["exhaust", "exhausting", "exhausted", "been exhausted"] },
+        { n: 98, sec: "sec2", text: "Neither the precise origin of the Voynich manuscript _____ the meaning of its illustrations has been conclusively established.", opts: ["or", "nor", "and", "but"] },
+        { n: 99, sec: "sec2", text: "The urban heat island effect is particularly pronounced in densely built districts _____ asphalt and concrete absorb solar radiation throughout the day.", opts: ["which", "where", "what", "when"] },
+        { n: 100, sec: "sec2", text: "_____ high-altitude wind shear poses a hazard to commercial aviation, meteorological satellites monitor jet stream anomalies continuously.", opts: ["Because", "Because of", "Due to", "Despite"] },
+        { n: 101, sec: "sec2", text: "No less remarkable than the monument's scale _____ the mathematical alignments built into its central corridor.", opts: ["is", "are", "was", "have been"] },
+        { n: 102, sec: "sec2", text: "_____ to secure unanimous approval from the zoning board, the developers revised their proposal to include additional green space.", opts: ["Failing", "Failed", "Having fail", "To failing"] },
+        { n: 103, sec: "sec2", text: "The study demonstrates that children exposed to two languages from infancy develop executive control _____ than monolingual peers on certain switching tasks.", opts: ["more efficiently", "most efficiently", "as efficiently", "efficient"] },
+        { n: 104, sec: "sec2", text: "Scarcely _____ the preliminary findings published when rival laboratories attempted to replicate the superconductivity experiment.", opts: ["were", "had", "had been", "did"] },
+        { n: 105, sec: "sec2", text: "_____ the exact mechanism behind monarch butterfly navigation remains debated, magnetic field sensitivity clearly plays a role.", opts: ["Despite", "While", "Because", "Unless"] },
+        { n: 106, sec: "sec2", text: "A significant proportion of the earth's freshwater _____ locked within the Antarctic and Greenland ice sheets.", opts: ["are", "is", "have been", "were being"] },
+        { n: 107, sec: "sec2", text: "The symphony's final movement, _____ themes from the opening overture, brings the work to a triumphant close.", opts: ["echoed", "echoing", "to echo", "echoes"] },
+        { n: 108, sec: "sec2", text: "_____ dismissed by critics as an unplayable concerto, the composition is now standard repertoire for soloists.", opts: ["Becoming", "Having become", "What was", "Once"] },
+        { n: 109, sec: "sec2", text: "At no point during the congressional hearing _____ the witness question the validity of the audit's underlying methodology.", opts: ["did", "was", "had", "could be"] },
+        { n: 110, sec: "sec2", text: "The physicist's lecture was _____ accessible that even attendees without formal mathematical training grasped the core principles of relativity.", opts: ["such", "so", "too", "very"] },
+
+        // Section 3: Written Expression (111-190)
+        { n: 111, sec: "sec3", text: "(A) **Despite of** the severe drought that afflicted the region for three consecutive summers, grain yields (B) **remained** (C) **remarkably** stable due to (D) **improved** irrigation techniques." },
+        { n: 112, sec: "sec3", text: "The (A) **number** of migratory songbirds passing through the coastal sanctuary (B) **have declined** sharply (C) **over** the past two decades, prompting urgent (D) **conservation** measures." },
+        { n: 113, sec: "sec3", text: "Before the invention of photography, portrait painters (A) **relied heavy** on careful anatomical observation (B) **to capture** both the physical likeness and (C) **social status** of their (D) **patrons**." },
+        { n: 114, sec: "sec3", text: "A (A) **newly discovered** species of deep-sea jellyfish (B) **possesses** bioluminescent organs that (C) **it uses** to lure prey into (D) **their** trailing tentacles." },
+        { n: 115, sec: "sec3", text: "(A) **Alike** other members of the cetacean order, baleen whales (B) **must surface** periodically (C) **to breathe** air through blowholes located atop (D) **their** heads." },
+        { n: 116, sec: "sec3", text: "The committee concluded that the proposed highway expansion would be neither (A) **economically** viable (B) **nor** environmentally (C) **soundly**, recommending instead an investment in (D) **light** rail." },
+        { n: 117, sec: "sec3", text: "(A) **Founded** in 1636, Harvard College is (B) **the oldest** institution of higher learning in the United States and (C) **has produced** numerous scholars, (D) **scientists, and influencing** leaders." },
+        { n: 118, sec: "sec3", text: "Because seismic waves travel at different (A) **velocities** through solid and molten rock, geophysicists can (B) **indirect** map the internal (C) **layers** of the (D) **Earth's** core." },
+        { n: 119, sec: "sec3", text: "(A) **Almost** every (B) **equipments** inside the cleanroom must be sterilized (C) **with** ionized gas before microchips can be (D) **assembled**." },
+        { n: 120, sec: "sec3", text: "The curator (A) **spent** six months (B) **restoring** the seventeenth-century tapestry, (C) **whose** vibrant dyes had faded after centuries of (D) **expose** to sunlight." },
+        { n: 121, sec: "sec3", text: "(A) **Much** of the (B) **evidences** cited in the early nineteenth-century geological debate (C) **was** later overturned by (D) **radiometric** dating." },
+        { n: 122, sec: "sec3", text: "(A) **Towered** above the tiled rooftops of the historic quarter, the medieval cathedral's twin spires (B) **are** clearly visible to visitors (C) **strolling** through the narrow cobblestone (D) **streets**." },
+        { n: 123, sec: "sec3", text: "Several (A) **hundreds of** ancient bronze coins were (B) **unearthed** during routine (C) **excavation** for the subway station (D) **extension**." },
+        { n: 124, sec: "sec3", text: "The (A) **primary** function of myelin sheaths (B) **surrounding** nerve fibers (C) **are** to accelerate the transmission of electrical (D) **impulses**." },
+        { n: 125, sec: "sec3", text: "Although the novelist achieved (A) **international** acclaim late in life, her earliest short stories had (B) **been** largely (C) **ignoring** by literary critics (D) **of** her generation." },
+        { n: 126, sec: "sec3", text: "(A) **Between** 1910 and 1930, the urban population of the country grew (B) **twice** as (C) **faster** as that of (D) **rural** agricultural provinces." },
+        { n: 127, sec: "sec3", text: "Each of the graduate fellows (A) **selected** for the summer institute (B) **are** required to present an original research paper (C) **at** the closing (D) **symposium**." },
+        { n: 128, sec: "sec3", text: "(A) **Most** amphibians begin their lives as aquatic larvae equipped with gills, (B) **later** undergoing metamorphosis (C) **for develop** lungs and limbs suitable (D) **for** terrestrial living." },
+        { n: 129, sec: "sec3", text: "The (A) **treatise** is divided into twelve chapters, the first four (B) **of whom** examine monetary policy in post-war Europe (C) **before** the establishment of the common (D) **market**." },
+        { n: 130, sec: "sec3", text: "(A) **Rather than** relying on chemical pesticides, orchardists increasingly introduce predatory mites (B) **to control** spider mite populations (C) **naturally** and (D) **sustainable**." },
+        { n: 131, sec: "sec3", text: "Titanium is (A) **more preferable** to steel in aerospace engineering (B) **because** it offers a comparable structural strength at roughly (C) **half** the (D) **weight**." },
+        { n: 132, sec: "sec3", text: "(A) **Since** its launch in 1990, the Hubble Space Telescope (B) **provided** astronomers with (C) **unprecedented** views of distant nebulae and (D) **ancient** galaxies." },
+        { n: 133, sec: "sec3", text: "A (A) **rapid** rise in atmospheric carbon dioxide concentrations (B) **not only** warms global surface temperatures (C) **but also increasing** the acidity of (D) **surface** ocean waters." },
+        { n: 134, sec: "sec3", text: "The (A) **amount** of migratory waterfowl nesting in the wetlands (B) **has** risen steadily since agricultural runoff was (C) **diverted** away from the (D) **estuary**." },
+        { n: 135, sec: "sec3", text: "(A) **When** exposed to extreme heat, certain ceramic composites expand (B) **lesser** than conventional metal alloys, making them ideal (C) **for** spacecraft heat (D) **shields**." },
+        { n: 136, sec: "sec3", text: "Professor Lin, together with two postdoctoral researchers from her laboratory, (A) **have** published a (B) **landmark** study on enzyme catalysis (C) **in** this week's (D) **issue**." },
+        { n: 137, sec: "sec3", text: "(A) **The** architectural plans for the civic library were (B) **return back** to the engineering firm for revisions (C) **concerning** emergency stairwell (D) **capacity**." },
+        { n: 138, sec: "sec3", text: "In contrast to (A) **traditional** oil painting, watercolor (B) **allows** the artist few opportunities to correct mistakes once pigment (C) **has applied** to damp (D) **paper**." },
+        { n: 139, sec: "sec3", text: "The (A) **discovery** of hydrothermal vent ecosystems in 1977 forced biologists (B) **revising** their assumption that all complex food webs (C) **ultimately** depend on (D) **sunlight**." },
+        { n: 140, sec: "sec3", text: "(A) **Whether** the artifact is an authentic Bronze Age ceremonial vessel (B) **or** a clever nineteenth-century forgery (C) **remain** to be determined by metallurgical (D) **testing**." },
+        { n: 141, sec: "sec3", text: "(A) **Hardly** any of the original wooden fortifications survived the siege, (B) **leaving** historians to reconstruct the layout from (C) **contemporaneously** military (D) **dispatches**." },
+        { n: 142, sec: "sec3", text: "(A) **During** the Pleistocene epoch, massive continental ice sheets (B) **laid** over much of northern North America, carving out (C) **basins** that later formed the Great (D) **Lakes**." },
+        { n: 143, sec: "sec3", text: "Mercury is the (A) **only** metallic element known (B) **being** liquid at standard room temperature, a property (C) **that** has made it useful in thermometers (D) **and** barometers." },
+        { n: 144, sec: "sec3", text: "(A) **Even though** the stringent safety protocols enforced at the nuclear facility, routine inspections uncovered minor corrosion along (B) **several** secondary cooling (C) **valves** last (D) **autumn**." },
+        { n: 145, sec: "sec3", text: "(A) **By** studying the isotopic ratios of oxygen trapped inside ancient fossilized teeth, (B) **paleontologists** can estimate what (C) **was the climate like** millions of years (D) **ago**." },
+        { n: 146, sec: "sec3", text: "A (A) **small** percentage of the scholarship budget (B) **were** allocated specifically to students pursuing degrees in (C) **applied** linguistics and (D) **translation** studies." },
+        { n: 147, sec: "sec3", text: "The (A) **newly** instituted transit fee is intended to discourage single-occupant commuters (B) **to drive** into the downtown core (C) **during** peak morning (D) **hours**." },
+        { n: 148, sec: "sec3", text: "(A) **Neither** the municipal council nor the regional transit authority (B) **have** finalized the environmental impact statement (C) **required** before construction can (D) **commence**." },
+        { n: 149, sec: "sec3", text: "While (A) **analyzing** the medieval ledger, the historian noticed that several entries had been (B) **deliberate** erased and overwritten with (C) **later** accounting (D) **figures**." },
+        { n: 150, sec: "sec3", text: "(A) **So** dense is the canopy of an old-growth rainforest that (B) **fewer** than two percent of incoming sunlight reaches the (C) **mossy** forest (D) **floor**." },
+        { n: 151, sec: "sec3", text: "The (A) **economic** viability of wind turbines depends heavily on how consistently the wind blows, how close a site is to power grids, (B) **and** how much (C) **does** local land (D) **cost**." },
+        { n: 152, sec: "sec3", text: "After (A) **completing** her residency in neurology, Dr. Okafor (B) **accepted** a fellowship at the research hospital, where she (C) **has worked** for the next three (D) **years**." },
+        { n: 153, sec: "sec3", text: "(A) **Unlike** solar panels, which generate direct current solely during daylight hours, geothermal plants can supply (B) **continuous** baseload electricity (C) **regardless** of weather (D) **condition**." },
+        { n: 154, sec: "sec3", text: "(A) **It** was the introduction of the steel plow, (B) **rather than** manual cultivation tools, that enabled settlers (C) **breaking** the dense prairie sod of the (D) **Midwest**." },
+        { n: 155, sec: "sec3", text: "The (A) **historic** significance of the treaty lies not in its territorial concessions, (B) **which** were modest, but in (C) **it** formal recognition of maritime (D) **neutrality**." },
+        { n: 156, sec: "sec3", text: "Every applicant (A) **who** wishes to be considered for the architectural fellowship (B) **must** submit a portfolio containing no (C) **less** than twelve original (D) **drawings**." },
+        { n: 157, sec: "sec3", text: "(A) **As** a result of prolonged overfishing, cod populations in the North Atlantic collapsed so (B) **dramatic** in the early 1990s that authorities imposed a (C) **complete** commercial (D) **moratorium**." },
+        { n: 158, sec: "sec3", text: "The annual festival, held (A) **every year** in late October, celebrates (B) **regional harvest** traditions through folk music, (C) **artisanal** crafts, and culinary (D) **demonstrations**." },
+        { n: 159, sec: "sec3", text: "Not only did the 1815 eruption of Mount Tambora (A) **devastated** nearby islands, (B) **but it also** lowered global temperatures enough (C) **to cause** (D) **widespread** crop failures in 1816." },
+        { n: 160, sec: "sec3", text: "(A) **Composed** primarily of hydrogen and helium, Jupiter possesses a magnetic field roughly fourteen times (B) **stronger** than (C) **Earth** and hosts dozens of diverse (D) **moons**." },
+        { n: 161, sec: "sec3", text: "When (A) **evaluating** longitudinal medical studies, researchers must account for (B) **confound** variables such as age, diet, socioeconomic status, and (C) **genetic** (D) **predisposition**." },
+        { n: 162, sec: "sec3", text: "The (A) **new** bridge, spanning nearly two miles across the tidal strait, was engineered to withstand hurricane-force winds and (B) **extreme** seismic (C) **active** without structural (D) **failure**." },
+        { n: 163, sec: "sec3", text: "(A) **Because** the manuscript contains no explicit date or signature, scholars have had to rely on (B) **stylistic** clues to determine (C) **whom** the anonymous author might (D) **be**." },
+        { n: 164, sec: "sec3", text: "(A) **Among** the most influential movements in twentieth-century architecture (B) **was** the Bauhaus school, which sought to (C) **unifying** fine art with industrial (D) **design**." },
+        { n: 165, sec: "sec3", text: "(A) **Having been** trained as a classical cellist, Elena found the transition to baroque performance practice (B) **both** intellectually stimulating and (C) **technically** (D) **challenged**." },
+        { n: 166, sec: "sec3", text: "The (A) **majority** of deep-ocean trenches are located along the perimeter of the Pacific Ocean, (B) **which** dense oceanic plates (C) **subduct** beneath lighter continental (D) **plates**." },
+        { n: 167, sec: "sec3", text: "(A) **No** matter how carefully an experiment is designed, random measurement errors can (B) **seldom** be eliminated (C) **entire** from empirical (D) **datasets**." },
+        { n: 168, sec: "sec3", text: "The (A) **museum's** permanent collection (B) **comprises of** more than forty thousand ethnographic objects gathered from (C) **indigenous** communities across five (D) **continents**." },
+        { n: 169, sec: "sec3", text: "(A) **Prior** to the widespread adoption of refrigeration, coastal cities depended on ice (B) **harvesting** from frozen northern lakes during winter and shipped southward in (C) **insulated** (D) **barges**." },
+        { n: 170, sec: "sec3", text: "A (A) **large** number of tropical orchids (B) **has** evolved intricate floral structures that mimic female insects, (C) **thereby** attracting male pollinators without offering (D) **any** nectar reward." },
+        { n: 171, sec: "sec3", text: "(A) **During** periods of rapid inflation, fixed-income households suffer disproportionately because their purchasing power erodes (B) **steady** as consumer prices (C) **continue** to (D) **climb**." },
+        { n: 172, sec: "sec3", text: "(A) **Although** its miniature size—barely two centimeters in length—the pygmy seahorse (B) **camouflages** itself effortlessly among the polyps of (C) **gorgonian** sea (D) **fans**." },
+        { n: 173, sec: "sec3", text: "(A) **To ensure** accurate calibration, the analytical balance must be placed on a vibration-free marble slab (B) **far** away from (C) **air** vents and direct (D) **sunlights**." },
+        { n: 174, sec: "sec3", text: "(A) **Much** like modern skyscrapers, ancient Roman apartment blocks—known as *insulae*—(B) **raised** several stories high and often (C) **housed** shops on the (D) **ground** floor." },
+        { n: 175, sec: "sec3", text: "The (A) **discoveries** made by the Mars rover have yielded compelling evidence that liquid water once (B) **flowed** across the planet's surface, carving (C) **vast** networks of (D) **river's** valleys." },
+        { n: 176, sec: "sec3", text: "(A) **That** distinguishes jazz improvisation from casual experimentation is its strict (B) **adherence** to underlying harmonic progressions and rhythmic (C) **structures** (D) **shared** by the ensemble." },
+        { n: 177, sec: "sec3", text: "(A) **As** soon as the treaty was ratified by all twelve signatory nations, trade tariffs on agricultural machinery (B) **have** been reduced by (C) **thirty** (D) **percent**." },
+        { n: 178, sec: "sec3", text: "(A) **Those** who advocate for urban rewilding argue that converting vacant lots into native meadows (B) **boosts** pollinator diversity, reduces stormwater runoff, and (C) **lowering** ambient summer (D) **temperatures**." },
+        { n: 179, sec: "sec3", text: "(A) **Despite** years of intensive restoration, several frescoes in the outer chapel remain (B) **too** fragile (C) **that** they cannot be viewed by the general (D) **public**." },
+        { n: 180, sec: "sec3", text: "(A) **Because** copper oxidizes when exposed to moisture and carbon dioxide, bronze statues (B) **gradually** acquire a greenish patina that (C) **protect** the underlying metal from further (D) **corrosion**." },
+        { n: 181, sec: "sec3", text: "(A) **Either** the chief engineer or her two senior assistants (B) **is** scheduled to inspect the newly poured concrete piers (C) **before** the scaffolding is (D) **dismantled**." },
+        { n: 182, sec: "sec3", text: "The (A) **professor's** explanation of quantum entanglement was (B) **such** abstract that half the introductory physics class (C) **remained** thoroughly (D) **bewildered** afterward." },
+        { n: 183, sec: "sec3", text: "(A) **Having** mastered traditional woodblock printing in Kyoto, the artist returned to London, (B) **where** she adapted the technique (C) **for** contemporary (D) **abstracted** compositions." },
+        { n: 184, sec: "sec3", text: "A (A) **growing** body of epidemiological research indicates that chronic sleep deprivation impairs immune response and (B) **disrupting** metabolic (C) **regulation** in (D) **adults**." },
+        { n: 185, sec: "sec3", text: "(A) **Unlike** other primates, humans possess a descended larynx, an anatomical adaptation (B) **what** permits a far wider range of (C) **articulate** speech (D) **sounds**." },
+        { n: 186, sec: "sec3", text: "(A) **By** the middle of the fifteenth century, Florence (B) **had became** a preeminent center of banking, textile manufacturing, and (C) **humanist** (D) **scholarship**." },
+        { n: 187, sec: "sec3", text: "(A) **Whether** measured by total biomass or species richness, tropical estuaries rank (B) **between** the most biologically productive ecosystems on (C) **Earth**, rivaling (D) **coral** reefs." },
+        { n: 188, sec: "sec3", text: "The (A) **director's** decision to shoot the documentary entirely on 16-millimeter film gave the footage a grainy texture (B) **similar** to (C) **those** of mid-century (D) **newsreels**." },
+        { n: 189, sec: "sec3", text: "(A) **Although** she had never formally studied geology, Mary Anning became (B) **renown** throughout Britain for her meticulous excavations of Jurassic marine (C) **fossils** along the Dorset (D) **coast**." },
+        { n: 190, sec: "sec3", text: "(A) **The** deeper a diver descends beneath the ocean surface, (B) **the greater** the hydrostatic pressure becomes, (C) **requiring** specialized gas mixtures to prevent (D) **narcotic**." },
+
+        // Section 4: Academic Vocabulary & Discourse Coherence (191-240)
+        { n: 191, sec: "sec4", text: "Although smartphone sensors have become nearly _____ in modern urban life, few citizens realize how much environmental data they passively collect.", opts: ["obsolete", "ubiquitous", "clandestine", "ephemeral"] },
+        { n: 192, sec: "sec4", text: "To _____ the economic shock of sudden factory closures, the regional government introduced retraining subsidies for displaced workers.", opts: ["exacerbate", "mitigate", "instigate", "proliferate"] },
+        { n: 193, sec: "sec4", text: "Independent ice-core measurements from Antarctica _____ the tree-ring evidence pointing to an abrupt cooling event in the sixth century.", opts: ["corroborate", "refute", "circumscribe", "disparage"] },
+        { n: 194, sec: "sec4", text: "Because desert wildflowers bloom for only a few days following rare rainfall, ecologists describe their appearance as remarkably _____.", opts: ["perpetual", "empirical", "ephemeral", "arbitrary"] },
+        { n: 195, sec: "sec4", text: "The new neuroimaging findings challenged the prevailing _____ that language comprehension is confined strictly to two isolated cortical zones.", opts: ["anomaly", "paradigm", "catalyst", "disparity"] },
+        { n: 196, sec: "sec4", text: "Rather than resolving the border dispute, the ambiguous wording of the 1923 treaty served only to _____ long-standing tensions.", opts: ["alleviate", "reconcile", "exacerbate", "substantiate"] },
+        { n: 197, sec: "sec4", text: "Without _____ data drawn from controlled field trials, the researchers' bold claims regarding the fertilizer remain purely speculative.", opts: ["anecdotal", "empirical", "redundant", "superficial"] },
+        { n: 198, sec: "sec4", text: "The arrival of the printing press acted as a powerful _____ for the rapid dissemination of vernacular literature across Europe.", opts: ["deterrent", "catalyst", "hindrance", "remnant"] },
+        { n: 199, sec: "sec4", text: "Critics argued that the committee's selection criteria were entirely _____, reflecting personal preference rather than objective scholarly merit.", opts: ["rigorous", "arbitrary", "transparent", "equitable"] },
+        { n: 200, sec: "sec4", text: "Despite repeated wildfires, the coastal chaparral shrubland exhibits _____ resilience, regenerating rapidly from fire-activated seed banks.", opts: ["tenuous", "erratic", "extraordinary", "negligible"] },
+        { n: 201, sec: "sec4", text: "The striking _____ between rural and urban literacy rates prompted the ministry to allocate emergency funding to remote primary schools.", opts: ["parity", "disparity", "consensus", "proximity"] },
+        { n: 202, sec: "sec4", text: "Astronomers initially dismissed the pulsar's rhythmic radio pulses as an instrumental _____, until three similar signals were detected elsewhere.", opts: ["anomaly", "convention", "axiom", "precedent"] },
+        { n: 203, sec: "sec4", text: "Early mechanical calculators were direct _____ of modern digital computers, demonstrating that arithmetic logic could be automated.", opts: ["successors", "adversaries", "precursors", "derivatives"] },
+        { n: 204, sec: "sec4", text: "In her concluding chapter, the historian attempts to _____ archival letters, municipal tax records, and oral histories into a cohesive narrative.", opts: ["segregate", "synthesize", "extrapolate", "repudiate"] },
+        { n: 205, sec: "sec4", text: "The witness gave a _____ account of the negotiations; however, leaked internal memos later exposed deep disagreements behind closed doors.", opts: ["candid", "discordant", "rosy", "convoluted"] },
+        { n: 206, sec: "sec4", text: "Given the _____ nature of the evidence—consisting solely of two weathered stone fragments—the dating of the settlement remains tentative.", opts: ["incontrovertible", "tenuous", "abundant", "definitive"] },
+        { n: 207, sec: "sec4", text: "Once inexpensive synthetic fabrics entered the market, demand for hand-woven linen _____ dramatically within a single generation.", opts: ["surged", "plummeted", "stabilized", "stagnated"] },
+        { n: 208, sec: "sec4", text: "Public health officials warned that vaccine hesitancy could _____ the gains made over decades of polio eradication campaigns.", opts: ["bolster", "jeopardize", "perpetuate", "expedite"] },
+        { n: 209, sec: "sec4", text: "The composer's late string quartets are renowned for their _____ structure, stripping away ornamental flourishes in favor of stark clarity.", opts: ["ostentatious", "austere", "redundant", "verbose"] },
+        { n: 210, sec: "sec4", text: "Although the merger was _____ intended to reduce consumer prices, critics noted that reduced competition had the opposite effect.", opts: ["ostensibly", "inadvertently", "reluctantly", "ambiguously"] },
+        { n: 211, sec: "sec4", text: "Many alpine plant species are _____ to specific mountain ranges, meaning they occur nowhere else on Earth.", opts: ["indigenous", "migratory", "endemic", "invasive"] },
+        { n: 212, sec: "sec4", text: "By introducing micro-credit programs, the nonprofit sought to _____ rural artisans from predatory lending networks.", opts: ["implicate", "emancipate", "alienate", "subordinate"] },
+        { n: 213, sec: "sec4", text: "The physicist's memo was praised for its _____, summarizing a forty-page technical appendix in three lucid paragraphs.", opts: ["verbosity", "brevity", "ambiguity", "complacency"] },
+        { n: 214, sec: "sec4", text: "Because coastal marshes act as natural buffers against storm surges, draining them for development leaves nearby towns increasingly _____.", opts: ["impervious", "vulnerable", "insulated", "resilient"] },
+        { n: 215, sec: "sec4", text: "Several board members voiced _____ reservations about expanding into overseas markets without conducting local consumer surveys first.", opts: ["unanimous", "vehement", "trivial", "complacent"] },
+        { n: 216, sec: "sec4", text: "The diplomat's _____ refusal to endorse the resolution signaled a major shift in her government's foreign policy.", opts: ["equivocal", "emphatic", "hesitant", "tacit"] },
+        { n: 217, sec: "sec4", text: "Far from being a passive bystander, the microbiome plays an _____ role in regulating human immune responses.", opts: ["integral", "ancillary", "obsolete", "indifferent"] },
+        { n: 218, sec: "sec4", text: "To avoid _____ the fragile ecosystem, visitors to the glacial valley are restricted to elevated boardwalks.", opts: ["preserving", "cultivating", "degrading", "surveying"] },
+        { n: 219, sec: "sec4", text: "The journalist's investigative series exposed _____ practices within the municipal procurement office, leading to immediate ethics reforms.", opts: ["exemplary", "unscrupulous", "transparent", "benevolent"] },
+        { n: 220, sec: "sec4", text: "Early critics of Impressionism _____ the movement's loose brushstrokes as unfinished sketches, failing to grasp its innovative treatment of light.", opts: ["lauded", "emulated", "derided", "sanctioned"] },
+        { n: 221, sec: "sec4", text: "The two hypotheses are not mutually exclusive; _____, recent cellular assays suggest they operate simultaneously during tissue repair.", opts: ["on the contrary", "consequently", "in summary", "for instance"] },
+        { n: 222, sec: "sec4", text: "Solar photovoltaic prices have fallen by nearly ninety percent over the past decade; _____, utility-scale battery storage remains comparatively costly.", opts: ["similarly", "nonetheless", "accordingly", "furthermore"] },
+        { n: 223, sec: "sec4", text: "Deep-sea organisms endure crushing pressures and near-freezing temperatures; _____, many exhibit extraordinarily slow metabolic rates.", opts: ["however", "consequently", "conversely", "meanwhile"] },
+        { n: 224, sec: "sec4", text: "The archival collection contains numerous forged letters; _____, historians must authenticate each document's paper watermark before citing it.", opts: ["in contrast", "hence", "nevertheless", "alternatively"] },
+        { n: 225, sec: "sec4", text: "Classical mechanics accurately predicts planetary orbits at everyday speeds; _____, it breaks down near the speed of light, where relativistic equations are required.", opts: ["moreover", "conversely", "therefore", "indeed"] },
+        { n: 226, sec: "sec4", text: "The symposium addressed coastal erosion, wetland restoration, and aquaculture; _____, all three panels underscored the urgency of rising sea temperatures.", opts: ["specifically", "notably", "regardless", "otherwise"] },
+        { n: 227, sec: "sec4", text: "Early steam engines were notoriously inefficient, converting barely one percent of coal energy into mechanical work; _____, they transformed British mining.", opts: ["even so", "as a result", "by the same token", "in other words"] },
+        { n: 228, sec: "sec4", text: "_____ the stringent water-conservation ordinances enacted last spring, reservoir levels continued to drop due to record evaporation.", opts: ["Owing to", "Notwithstanding", "In accordance with", "Alongside"] },
+        { n: 229, sec: "sec4", text: "Archaeologists once assumed the site was an isolated hunting camp; _____, ground-penetrating radar revealed extensive stone foundations beneath the pasture.", opts: ["likewise", "subsequently", "accordingly", "presumably"] },
+        { n: 230, sec: "sec4", text: "_____ a growing consensus on climate risks, international treaties often stall over how financial burdens should be divided between developed and developing nations.", opts: ["In light of", "Given", "Despite", "Because of"] },
+        { n: 231, sec: "sec4", text: "The researchers carefully _____ extraneous background noise from the acoustic recordings before isolating the whale vocalizations.", opts: ["filtered out", "brought about", "put forward", "fell back on"] },
+        { n: 232, sec: "sec4", text: "When the primary funding agency withdrew support, the longitudinal study was forced to _____ a smaller network of private endowments.", opts: ["account for", "fall back on", "dispense with", "guard against"] },
+        { n: 233, sec: "sec4", text: "Critics contend that the sweeping deregulation bill could _____ unintended systemic risks across regional banking institutions.", opts: ["give rise to", "abstain from", "stem from", "conform to"] },
+        { n: 234, sec: "sec4", text: "High-resolution satellite imagery enables foresters to _____ subtle changes in canopy density long before visible die-off occurs.", opts: ["pinpoint", "overlook", "fabricate", "obscure"] },
+        { n: 235, sec: "sec4", text: "Because the chemical reaction releases heat rapidly, technicians must _____ strict thermal thresholds throughout the synthesis.", opts: ["deviate from", "adhere to", "dispense with", "wrestle with"] },
+        { n: 236, sec: "sec4", text: "After decades of obscurity, the pioneering botanist's illustrated notebooks are finally receiving the scholarly recognition they _____.", opts: ["forfeit", "warrant", "evade", "preclude"] },
+        { n: 237, sec: "sec4", text: "The museum's acquisition policy aims to _____ gaps in its twentieth-century Latin American sculpture holdings.", opts: ["widen", "rectify", "perpetuate", "bypass"] },
+        { n: 238, sec: "sec4", text: "Although the initial capital outlay is substantial, automated sorting machinery tends to _____ itself within four years through lower labor costs.", opts: ["pay for", "account for", "call for", "stand for"] },
+        { n: 239, sec: "sec4", text: "To ensure statistical validity, the survey sample was weighted to _____ demographic shifts recorded in the most recent census.", opts: ["contradict", "reflect", "negate", "distort"] },
+        { n: 240, sec: "sec4", text: "The professor warned her seminar students not to _____ correlation with causation when interpreting observational economic trends.", opts: ["distinguish", "conflate", "separate", "contrast"] },
+
+        // Section 5: Reading Comprehension (241-300)
+        // Passage 1 (241-250)
+        { n: 241, sec: "sec5", stim: "p1", text: "What is the primary purpose of the passage?", opts: ["To argue that the Cambrian Explosion lasted longer than previously estimated.", "To explain the significance and preservation mechanisms of the Burgess Shale fossils.", "To criticize Charles Doolittle Walcott's early fieldwork methods.", "To trace the evolution of modern velvet worms from Ediacaran organisms."] },
+        { n: 242, sec: "sec5", stim: "p1", text: "According to Paragraph 1, how did Cambrian life differ from earlier Ediacaran life?", opts: ["Cambrian organisms were exclusively microscopic.", "Modern animal body plans appeared rapidly during the Cambrian.", "Ediacaran organisms possessed heavier mineralized shells.", "Cambrian diversity declined after twenty million years."] },
+        { n: 243, sec: "sec5", stim: "p1", text: "Why does the author contrast *Lagerstätten* with \"ordinary fossil beds\" in Paragraph 2?", opts: ["To emphasize that most fossil beds are located in the Canadian Rockies.", "To show why soft-bodied animals are rarely preserved in typical deposits.", "To prove that mineralized shells decay faster than soft tissues.", "To suggest that ordinary fossil beds contain older organisms."] },
+        { n: 244, sec: "sec5", stim: "p1", text: "The word **benthic** in Paragraph 2 most likely refers to organisms that live", opts: ["near the ocean surface.", "inside freshwater lakes.", "on or near the seafloor.", "exclusively in oxygen-free mud."] },
+        { n: 245, sec: "sec5", stim: "p1", text: "According to Paragraph 2, which factor was essential in preserving soft tissues at the Burgess Shale?", opts: ["Rapid burial in low-oxygen deep water that halted decomposition.", "High water temperatures that baked clay around the shells.", "Scavengers that stripped away fragile outer appendages.", "Volcanic ash that replaced carbon with calcium carbonate."] },
+        { n: 246, sec: "sec5", stim: "p1", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 2. Where would the following sentence best fit?\n*\"In fact, fewer than fifteen percent of the genera preserved at the site possessed hard shells that would have survived in typical marine sediments.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 247, sec: "sec5", stim: "p1", text: "The word **meticulous** in Paragraph 3 is closest in meaning to", opts: ["hasty", "painstaking", "speculative", "superficial"] },
+        { n: 248, sec: "sec5", stim: "p1", text: "What did Harry Whittington's re-examination of the Burgess Shale demonstrate?", opts: ["Walcott had forged several of the specimens in 1909.", "Early Cambrian animals displayed unusual body plans beyond modern groups.", "*Opabinia* and *Hallucigenia* were actually plant fossils.", "Three-dimensional excavation destroys carbonaceous films."] },
+        { n: 249, sec: "sec5", stim: "p1", text: "The phrase **these enigmatic forms** in Paragraph 3 refers to", opts: ["early arthropods and velvet worms.", "modern taxonomic groups.", "bizarre creatures such as *Opabinia* and *Hallucigenia*.", "the researchers working in the 1970s."] },
+        { n: 250, sec: "sec5", stim: "p1", text: "What can be inferred from the final sentence of the passage?", opts: ["Many Cambrian evolutionary experiments went extinct.", "Arthropods are the only surviving phylum from the Cambrian.", "Anatomical diversity today exceeds that of the Cambrian period.", "Future excavations will likely disprove the Cambrian Explosion."] },
+
+        // Passage 2 (251-260)
+        { n: 251, sec: "sec5", stim: "p2", text: "What is the main subject of the passage?", opts: ["Why Portland cement requires steel reinforcement.", "The chemical mechanisms behind the longevity of Roman marine concrete.", "Vitruvius's architectural contributions to Mediterranean harbors.", "The environmental hazards of mining volcanic ash near Mount Vesuvius."] },
+        { n: 252, sec: "sec5", stim: "p2", text: "According to Paragraph 1, why does modern marine concrete typically fail over time?", opts: ["Wave energy erodes the limestone aggregate immediately.", "Saltwater corrodes internal steel bars, fracturing the surrounding concrete.", "Portland cement cannot set properly underwater.", "Mediterranean seawater contains unusually high acid levels."] },
+        { n: 253, sec: "sec5", stim: "p2", text: "The word **spall** in Paragraph 1 is closest in meaning to", opts: ["harden", "flake or break off", "expand smoothly", "change color"] },
+        { n: 254, sec: "sec5", stim: "p2", text: "What did researchers previously assume about *pozzolana* in Roman concrete?", opts: ["It prevented seawater from ever entering the structure.", "It reacted quickly with lime to create a completely passive, impermeable binder.", "It weakened the mortar unless paired with steel reinforcement.", "It could only be mixed using freshwater rather than seawater."] },
+        { n: 255, sec: "sec5", stim: "p2", text: "According to Paragraph 3, how does seawater affect Roman marine concrete?", opts: ["It washes away the volcanic tuff within decades.", "It reacts with remaining ash and lime to grow reinforcing mineral crystals.", "It prevents aluminous tobermorite from crystallizing.", "It dissolves the outer piers faster than modern concrete."] },
+        { n: 256, sec: "sec5", stim: "p2", text: "What role did \"hot-mixing\" play in Roman concrete, according to Paragraph 3?", opts: ["It eliminated the need for volcanic ash altogether.", "It created reactive lime deposits capable of repairing future cracks.", "It cooled the mortar rapidly for underwater pouring.", "It extracted chloride ions from Mediterranean seawater."] },
+        { n: 257, sec: "sec5", stim: "p2", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 3. Where would the following sentence best fit?\n*\"In essence, the very environment that destroys modern concrete actively fortified the Roman material.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 258, sec: "sec5", stim: "p2", text: "The word **nascent** in Paragraph 3 is closest in meaning to", opts: ["emerging", "catastrophic", "intentional", "superficial"] },
+        { n: 259, sec: "sec5", stim: "p2", text: "Why does the author mention \"low-carbon seawalls\" at the end of Paragraph 3?", opts: ["To argue that Vitruvius was primarily concerned with climate change.", "To show a practical modern application inspired by Roman engineering.", "To contrast the cost of volcanic ash with steel reinforcement.", "To suggest Roman harbors caused significant carbon emissions."] },
+        { n: 260, sec: "sec5", stim: "p2", text: "Which of the following is NOT mentioned in the passage as an ingredient in Roman marine concrete?", opts: ["Slaked lime or quicklime", "Volcanic ash (*pozzolana*)", "Seawater", "Steel reinforcement bars"] },
+
+        // Passage 3 (261-270)
+        { n: 261, sec: "sec5", stim: "p3", text: "What is the central theme of the passage?", opts: ["How tectonic plates create volcanic islands in the Pacific Ocean.", "The discovery and functioning of sunlight-independent deep-sea ecosystems.", "Why *Alvin* was designed to explore the Galápagos Rift.", "The toxic effects of hydrogen sulfide on surface marine life."] },
+        { n: 262, sec: "sec5", stim: "p3", text: "Prior to 1977, how did biologists believe abyssal seafloor animals obtained energy?", opts: ["By absorbing heat directly from underwater volcanoes.", "Through organic debris falling from upper sunlit waters.", "By migrating upward to feed near the surface at night.", "Through symbiotic bacteria inside their gills."] },
+        { n: 263, sec: "sec5", stim: "p3", text: "The word **percolates** in Paragraph 2 is closest in meaning to", opts: ["evaporates", "freezes", "seeps", "erupts"] },
+        { n: 264, sec: "sec5", stim: "p3", text: "In chemosynthesis, what serves as the primary energy source for producing organic sugars?", opts: ["Filtered blue light penetrating to 2,500 meters.", "Chemical energy within hydrogen sulfide molecules.", "Decaying marine snow trapped in basalt fractures.", "Heat absorbed directly from magma chambers."] },
+        { n: 265, sec: "sec5", stim: "p3", text: "According to Paragraph 3, what is unusual about the anatomy of *Riftia pachyptila*?", opts: ["It possesses two separate digestive tracts.", "It has no mouth or gut, relying on internal bacteria for nutrition.", "It uses eyes in its plume to locate crabs and shrimp.", "It lacks hemoglobin in its circulatory system."] },
+        { n: 266, sec: "sec5", stim: "p3", text: "What is the function of the **trophosome** mentioned in Paragraph 3?", opts: ["It propels tubeworm larvae toward new vents.", "It filters toxic basalt minerals out of seawater.", "It houses the symbiotic bacteria that nourish the tubeworm.", "It anchors the tubeworm firmly to tectonic fractures."] },
+        { n: 267, sec: "sec5", stim: "p3", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 3. Where would the following sentence best fit?\n*\"In return for supplying these raw chemical ingredients, the tubeworm receives a steady supply of synthesized carbohydrates.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 268, sec: "sec5", stim: "p3", text: "Why does the author mention that \"individual vents can go extinct within decades\" in Paragraph 3?", opts: ["To explain why vent organisms must disperse widely to survive.", "To argue that hydrothermal vents are less important than marine snow.", "To show that *Riftia* tubeworms live shorter lives than shrimp.", "To warn that submarine exploration damages vent chimneys."] },
+        { n: 269, sec: "sec5", stim: "p3", text: "Which of the following can be inferred about hydrothermal vent communities?", opts: ["They would perish immediately if the Sun stopped shining.", "Their existence suggests life might persist on icy moons with subsurface oceans.", "They contain fewer bacteria than sunlit coral reefs.", "They only exist in the Galápagos Rift."] },
+        { n: 270, sec: "sec5", stim: "p3", text: "The word **barren** in Paragraph 3 is closest in meaning to", opts: ["turbulent", "lifeless or sparse", "shallow", "mineral-rich"] },
+
+        // Passage 4 (271-280)
+        { n: 271, sec: "sec5", stim: "p4", text: "What is the primary purpose of the passage?", opts: ["To compare Hermann Ebbinghaus's research methods with modern brain scans.", "To explain why spaced learning produces stronger long-term memory than cramming.", "To argue that students should sleep instead of studying before exams.", "To trace the evolution of the human hippocampus."] },
+        { n: 272, sec: "sec5", stim: "p4", text: "According to Paragraph 1, what limitation is associated with \"massed practice\"?", opts: ["It fails to work for motor skills even in the short term.", "It yields strong immediate recall but poorer long-term retention.", "It has not been studied since 1885.", "It prevents students from solving complex problems during a test."] },
+        { n: 273, sec: "sec5", stim: "p4", text: "The word **robust** in Paragraph 1 is closest in meaning to", opts: ["controversial", "reliable and strong", "outdated", "complex"] },
+        { n: 274, sec: "sec5", stim: "p4", text: "How does the *encoding variability* hypothesis account for the spacing effect?", opts: ["Studying in varied temporal contexts provides multiple pathways to retrieve a memory.", "Working memory expands only when material is studied in silence.", "Shorter study sessions reduce fatigue in the visual cortex.", "Cramming eliminates environmental distractions completely."] },
+        { n: 275, sec: "sec5", stim: "p4", text: "According to *study-phase retrieval theory*, why is a moderate amount of forgetting between sessions helpful?", opts: ["It clears irrelevant facts out of the neocortex.", "Effortful reconstruction strengthens the memory trace more than easy review.", "It forces students to rely on textbooks rather than recall.", "It shortens the duration of slow-wave sleep needed afterward."] },
+        { n: 276, sec: "sec5", stim: "p4", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 2. Where would the following sentence best fit?\n*\"In contrast, massed repetition induces a deceptive sense of fluency precisely because the information has never left immediate awareness.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 277, sec: "sec5", stim: "p4", text: "According to Paragraph 3, what happens during *systems consolidation*?", opts: ["Memories are erased from the neocortex during waking hours.", "Temporary hippocampal memories are stabilized across the neocortex.", "Synaptic protein synthesis halts during slow-wave sleep.", "The hippocampus converts motor skills into verbal facts."] },
+        { n: 278, sec: "sec5", stim: "p4", text: "Why does the author mention \"slow-wave sleep\" in Paragraph 3?", opts: ["To explain when key neural reorganization for lasting memory occurs.", "To show that cramming improves sleep quality.", "To distinguish declarative memory from sensory perception.", "To argue that waking rehearsal is unnecessary."] },
+        { n: 279, sec: "sec5", stim: "p4", text: "The word **durable** in Paragraph 3 is closest in meaning to", opts: ["emotional", "lasting", "conscious", "rapid"] },
+        { n: 280, sec: "sec5", stim: "p4", text: "Which of the following study strategies is best supported by the passage?", opts: ["Reviewing flashcards for six straight hours the night before a final exam.", "Reading a chapter twice back-to-back without pausing.", "Testing oneself on key concepts at intervals spanning several days and nights.", "Avoiding sleep immediately after learning new technical vocabulary."] },
+
+        // Passage 5 (281-290)
+        { n: 281, sec: "sec5", stim: "p5", text: "What is the main topic of the passage?", opts: ["Why radial-velocity measurements replaced space telescopes.", "The principles, capabilities, and limitations of transit photometry.", "How Kepler's laws govern binary star systems.", "Atmospheric gases discovered on Jupiter-sized exoplanets."] },
+        { n: 282, sec: "sec5", stim: "p5", text: "Why is direct imaging of Earth-sized exoplanets so challenging?", opts: ["Distant planets emit no infrared radiation.", "Host stars are vastly brighter than the planets orbiting them.", "Interstellar dust absorbs all light from rocky worlds.", "Space telescopes cannot remain pointed at one star for long."] },
+        { n: 283, sec: "sec5", stim: "p5", text: "According to Paragraph 2, what can astronomers determine from the *depth* of a star's brightness dip?", opts: ["The chemical composition of the planet's core.", "The planet's size compared to its host star.", "Whether the planet contains liquid surface water.", "The exact temperature of the stellar corona."] },
+        { n: 284, sec: "sec5", stim: "p5", text: "How do astronomers analyze the atmospheric composition of a transiting exoplanet?", opts: ["By capturing reflected sunlight after the planet passes behind the star.", "By examining absorption lines in starlight passing through the planet's atmosphere.", "By measuring gravitational wobbles caused by atmospheric winds.", "By tracking changes in the planet's orbital period over decades."] },
+        { n: 285, sec: "sec5", stim: "p5", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 2. Where would the following sentence best fit?\n*\"Even more remarkably, the method offers a window into alien skies.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 286, sec: "sec5", stim: "p5", text: "The word **minuscule** in Paragraph 2 is closest in meaning to", opts: ["predictable", "deceptive", "tiny", "constant"] },
+        { n: 287, sec: "sec5", stim: "p5", text: "What does Paragraph 3 identify as a major limitation of transit photometry?", opts: ["It cannot distinguish gas giants from rocky worlds.", "Most planetary orbits are not aligned edge-on from Earth's perspective.", "Space telescopes cannot operate outside Earth's atmosphere.", "Sunspots block more than ten percent of a star's light."] },
+        { n: 288, sec: "sec5", stim: "p5", text: "Why must astronomers perform follow-up observations after detecting a brightness dip?", opts: ["To ensure the dimming was not caused by starspots or companion stars.", "To recalculate the speed of light near massive stars.", "To calibrate Kepler's laws for gas giants.", "To verify that the host star has not exploded."] },
+        { n: 289, sec: "sec5", stim: "p5", text: "According to Paragraph 3, which type of exoplanet is *easiest* to confirm using transit and radial-velocity methods?", opts: ["Small planets in wide, multi-decade orbits.", "Large planets in tight orbits close to their stars.", "Planets whose orbits are tilted face-on toward Earth.", "Rogue planets drifting without a host star."] },
+        { n: 290, sec: "sec5", stim: "p5", text: "The phrase **the primary method** in Paragraph 1 refers to", opts: ["direct photography.", "radial-velocity spectroscopy.", "transit photometry.", "stellar flare monitoring."] },
+
+        // Passage 6 (291-300)
+        { n: 291, sec: "sec5", stim: "p6", text: "What is the author's main purpose in this passage?", opts: ["To describe the biological virus responsible for striped tulip petals.", "To show how modern historical research challenges traditional accounts of tulip mania.", "To compare seventeenth-century Dutch banking with nineteenth-century stock markets.", "To defend Charles Mackay's historical accuracy against recent critics."] },
+        { n: 292, sec: "sec5", stim: "p6", text: "According to Paragraph 1, how has the tulip mania traditionally been portrayed?", opts: ["As a minor dispute among wealthy Amsterdam florists.", "As a nationwide speculative craze that ruined the Dutch economy.", "As an intentional hoax staged by Calvinist writers.", "As a prolonged trade war between Holland and France."] },
+        { n: 293, sec: "sec5", stim: "p6", text: "The word **scrutiny** in Paragraph 2 is closest in meaning to", opts: ["neglect", "close examination", "celebration", "dismissal"] },
+        { n: 294, sec: "sec5", stim: "p6", text: "What did Anne Goldgar's review of archival records reveal about tulip traders?", opts: ["Nearly every artisan in Haarlem declared bankruptcy in 1637.", "Participation was largely limited to affluent merchants and specialists.", "Most transactions were conducted exclusively in gold bullion.", "Working-class laborers drove prices higher than merchants did."] },
+        { n: 295, sec: "sec5", stim: "p6", text: "According to Paragraph 2, why did certain \"broken\" tulip bulbs command extraordinarily high prices?", opts: ["Their striped patterns were caused by a rare virus and could not be easily propagated.", "They were imported exclusively from North America at great expense.", "The Dutch government mandated their use in religious ceremonies.", "They produced edible bulbs prized during winter famines."] },
+        { n: 296, sec: "sec5", stim: "p6", text: "Why does the author note that most tulip trades used \"futures contracts requiring minimal upfront cash\"?", opts: ["To prove that tulip growers cheated wealthy merchants.", "To show that buyers rarely lost real estate or entire fortunes when prices fell.", "To explain why Amsterdam banks collapsed in 1637.", "To demonstrate that tulips were cheaper than ordinary vegetables."] },
+        { n: 297, sec: "sec5", stim: "p6", text: "Look at the four squares **[A]**, **[B]**, **[C]**, and **[D]** in Paragraph 2. Where would the following sentence best fit?\n*\"In fact, Goldgar could not verify a single documented case of a Dutch citizen going bankrupt solely because of tulip speculation.\"*", opts: ["[A]", "[B]", "[C]", "[D]"] },
+        { n: 298, sec: "sec5", stim: "p6", text: "According to Paragraph 3, what was the broader effect of the February 1637 market crash?", opts: ["It halted Dutch maritime commerce for a decade.", "It had minimal impact on the overall Dutch economy.", "It forced the closure of the Amsterdam Stock Exchange.", "It prompted Calvinist moralists to support futures trading."] },
+        { n: 299, sec: "sec5", stim: "p6", text: "How did satirical seventeenth-century pamphlets contribute to the modern myth of tulip mania?", opts: ["Later authors treated moralizing exaggerations as factual history.", "Merchants distributed them to inflate bulb prices artificially.", "They contained the only surviving price lists from Haarlem.", "Charles Mackay translated them accurately to refute banking critics."] },
+        { n: 300, sec: "sec5", stim: "p6", text: "The word **negligible** in Paragraph 3 is closest in meaning to", opts: ["devastating", "prolonged", "insignificant", "irreversible"] }
+      ];
+
+      // Parse Section 3 options from inline markers (A) **...** (B) **...** (C) **...** (D) **...**
+      function extractSec3Opts(text) {
+        const letters = ["A", "B", "C", "D"];
+        const opts = [];
+        for (const L of letters) {
+          const re = new RegExp("\\(" + L + "\\)\\s*\\*\\*([^*]+)\\*\\*");
+          const m = text.match(re);
+          opts.push(m ? m[1] : L);
+        }
+        return opts;
+      }
+
+      QUESTIONS.forEach((q) => {
+        if (q.sec === "sec3" && !q.opts) {
+          q.opts = extractSec3Opts(q.text);
+        }
+      });
+
+      // State management
+      let state = {
+        answers: {}, // { [questionNumber]: "A"|"B"|"C"|"D" }
+        activeSection: "all", // "all" | "sec1".."sec5"
+        unansweredOnly: false,
+        blindListening: false,
+        revealedScripts: {},
+        elapsedSeconds: 0,
+        timerRunning: false
+      };
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === "object") {
+              state.answers = parsed.answers || {};
+              state.activeSection = parsed.activeSection || "all";
+              state.unansweredOnly = Boolean(parsed.unansweredOnly);
+              state.blindListening = Boolean(parsed.blindListening);
+              state.revealedScripts = parsed.revealedScripts || {};
+              state.elapsedSeconds = Number(parsed.elapsedSeconds) || 0;
+            }
+          }
+        } catch (err) {
+          console.warn("Unable to load saved progress:", err);
+        }
+      }
+
+      function saveState(statusText) {
+        try {
+          localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify({
+              answers: state.answers,
+              activeSection: state.activeSection,
+              unansweredOnly: state.unansweredOnly,
+              blindListening: state.blindListening,
+              revealedScripts: state.revealedScripts,
+              elapsedSeconds: state.elapsedSeconds
+            })
+          );
+          const el = document.getElementById("saveStatus");
+          if (el) {
+            el.textContent = statusText || "Progress saved";
+          }
+        } catch (err) {
+          const el = document.getElementById("saveStatus");
+          if (el) el.textContent = "Auto-save unavailable";
+        }
+      }
+
+      // Formatting helpers
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function formatRichText(str) {
+        let html = escapeHtml(str);
+        // Bold **...**
+        html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+        // Italic *...*
+        html = html.replace(/\*([^*]+)\*/g, "<em>$1</em>");
+        // Insertion squares [A], [B], [C], [D] in reading passages
+        html = html.replace(/\[(A|B|C|D)\]/g, '<span class="insert-square">[$1]</span>');
+        // Newlines
+        html = html.replace(/\n/g, "<br />");
+        return html;
+      }
+
+      function formatSec3Sentence(q) {
+        const selected = state.answers[q.n];
+        let html = escapeHtml(q.text);
+        html = html.replace(/\((A|B|C|D)\)\s*\*\*([^*]+)\*\*/g, (_, letter, phrase) => {
+          const isSel = selected === letter ? " selected-span" : "";
+          return `<span class="err-span${isSel}" data-q="${q.n}" data-opt="${letter}" title="Select (${letter})"><span class="err-badge">(${letter})</span> ${phrase}</span>`;
+        });
+        html = html.replace(/\*([^*]+)\*/g, "<em>$1</em>");
+        return html;
+      }
+
+      function stripMarkdown(str) {
+        return str.replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\*([^*]+)\*/g, "$1");
+      }
+
+      // Recorded audio helpers for Listening Section
+      const STIMULUS_AUDIO = {
+        conv1: "listening_audio/11_PartB_Conversation_1.webm",
+        conv2: "listening_audio/12_PartB_Conversation_2.webm",
+        lec1: "listening_audio/13_PartC_Lecture_1.webm",
+        lec2: "listening_audio/14_PartC_Lecture_2.webm"
+      };
+
+      function getDialogueAudioSrc(qNum) {
+        const padded = String(qNum).padStart(2, "0");
+        return `listening_audio/${padded}_PartA_Dialogue_${padded}.webm`;
+      }
+
+      function stopAllAudio(exceptEl) {
+        document.querySelectorAll("audio.audio-player").forEach((audio) => {
+          if (audio !== exceptEl && !audio.paused) {
+            audio.pause();
+          }
+        });
+      }
+
+      function createAudioPlayer(src) {
+        const audio = document.createElement("audio");
+        audio.className = "audio-player";
+        audio.controls = true;
+        audio.preload = "none";
+        audio.src = src;
+        audio.addEventListener("play", () => stopAllAudio(audio));
+        return audio;
+      }
+
+      // Timer logic
+      let timerInterval = null;
+
+      function formatTime(totalSec) {
+        const hrs = Math.floor(totalSec / 3600);
+        const mins = Math.floor((totalSec % 3600) / 60);
+        const secs = totalSec % 60;
+        return [hrs, mins, secs].map((v) => String(v).padStart(2, "0")).join(":");
+      }
+
+      function updateTimerUI() {
+        document.getElementById("timerDisplay").textContent = formatTime(state.elapsedSeconds);
+        document.getElementById("timerToggleBtn").textContent = state.timerRunning ? "Pause" : (state.elapsedSeconds > 0 ? "Resume" : "Start");
+      }
+
+      function toggleTimer() {
+        if (state.timerRunning) {
+          state.timerRunning = false;
+          clearInterval(timerInterval);
+          timerInterval = null;
+          saveState("Timer paused");
+        } else {
+          state.timerRunning = true;
+          timerInterval = setInterval(() => {
+            state.elapsedSeconds += 1;
+            document.getElementById("timerDisplay").textContent = formatTime(state.elapsedSeconds);
+            if (state.elapsedSeconds % 5 === 0) {
+              saveState();
+            }
+          }, 1000);
+        }
+        updateTimerUI();
+      }
+
+      // Progress & Export rendering
+      function getAnsweredCount() {
+        let count = 0;
+        for (let i = 1; i <= 300; i++) {
+          if (state.answers[i]) count++;
+        }
+        return count;
+      }
+
+      function getSectionAnsweredCount(sec) {
+        let count = 0;
+        for (let i = sec.start; i <= sec.end; i++) {
+          if (state.answers[i]) count++;
+        }
+        return count;
+      }
+
+      function updateProgressAndExport() {
+        const total = QUESTIONS.length;
+        const answered = getAnsweredCount();
+        const pct = Math.round((answered / total) * 100);
+
+        document.getElementById("progressText").textContent = `${answered} / ${total} answered (${pct}%)`;
+        document.getElementById("progressFill").style.width = `${pct}%`;
+
+        // Update section tab counts
+        const tabsContainer = document.getElementById("sectionTabs");
+        tabsContainer.innerHTML = "";
+
+        const allBtn = document.createElement("button");
+        allBtn.type = "button";
+        allBtn.className = "tab-btn" + (state.activeSection === "all" ? " active" : "") + (answered === total ? " done" : "");
+        allBtn.innerHTML = `All Sections <span class="tab-count">${answered}/300</span>`;
+        allBtn.addEventListener("click", () => {
+          state.activeSection = "all";
+          saveState();
+          renderTest();
+        });
+        tabsContainer.appendChild(allBtn);
+
+        SECTIONS.forEach((sec) => {
+          const secAns = getSectionAnsweredCount(sec);
+          const secTot = sec.end - sec.start + 1;
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "tab-btn" + (state.activeSection === sec.id ? " active" : "") + (secAns === secTot ? " done" : "");
+          btn.innerHTML = `${sec.short} <span class="tab-count">${secAns}/${secTot}</span>`;
+          btn.addEventListener("click", () => {
+            state.activeSection = sec.id;
+            saveState();
+            renderTest();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          tabsContainer.appendChild(btn);
+        });
+
+        // Export card status & gated Export Button
+        const exportCard = document.getElementById("exportCard");
+        const exportStatusArea = document.getElementById("exportStatusArea");
+        const exportBtnContainer = document.getElementById("exportButtonContainer");
+        exportBtnContainer.innerHTML = "";
+
+        if (answered === total) {
+          exportCard.classList.add("unlocked");
+          exportStatusArea.innerHTML = `<div class="export-status ready">All 300 / 300 questions completed! Your answer sheet export is now unlocked below.</div>`;
+          const dlBtn = document.createElement("button");
+          dlBtn.type = "button";
+          dlBtn.className = "btn btn-accent";
+          dlBtn.style.padding = "12px 20px";
+          dlBtn.style.fontSize = "1rem";
+          dlBtn.textContent = "Export Full Test & Answers (.txt)";
+          dlBtn.addEventListener("click", exportTxtFile);
+          exportBtnContainer.appendChild(dlBtn);
+        } else {
+          exportCard.classList.remove("unlocked");
+          const remaining = total - answered;
+          exportStatusArea.innerHTML = `<div class="export-status locked"><strong>Export Locked:</strong> You have answered <strong>${answered} of 300</strong> questions (<strong>${remaining} remaining</strong>). The export button will become available here once every question has an answer.</div>`;
+          const goBtn = document.createElement("button");
+          goBtn.type = "button";
+          goBtn.className = "btn btn-primary";
+          goBtn.textContent = "Jump to Next Unanswered Question";
+          goBtn.addEventListener("click", jumpToNextUnanswered);
+          exportBtnContainer.appendChild(goBtn);
+        }
+      }
+
+      // Render question card
+      function createQuestionCard(q) {
+        const card = document.createElement("div");
+        const selected = state.answers[q.n];
+        card.className = "question-card" + (selected ? " answered" : "");
+        card.id = `q-${q.n}`;
+
+        // Part A dialogue block
+        if (q.dialogue) {
+          const dlgWrap = document.createElement("div");
+          dlgWrap.className = "dialogue-block";
+          const isHidden = state.blindListening && !state.revealedScripts[`q${q.n}`];
+
+          if (isHidden) {
+            const msg = document.createElement("div");
+            msg.className = "hidden-script-placeholder";
+            msg.textContent = "Script hidden (Blind Listening Mode). Play the audio below or click Reveal Script.";
+            dlgWrap.appendChild(msg);
+          } else {
+            q.dialogue.forEach((line) => {
+              const lineEl = document.createElement("div");
+              lineEl.innerHTML = formatRichText(line);
+              dlgWrap.appendChild(lineEl);
+            });
+          }
+
+          const ctrl = document.createElement("div");
+          ctrl.style.display = "flex";
+          ctrl.style.alignItems = "center";
+          ctrl.style.gap = "10px";
+          ctrl.style.marginTop = "10px";
+          ctrl.style.flexWrap = "wrap";
+
+          ctrl.appendChild(createAudioPlayer(getDialogueAudioSrc(q.n)));
+
+          if (state.blindListening) {
+            const revBtn = document.createElement("button");
+            revBtn.type = "button";
+            revBtn.className = "btn";
+            revBtn.textContent = isHidden ? "Reveal Script" : "Hide Script";
+            revBtn.addEventListener("click", () => {
+              state.revealedScripts[`q${q.n}`] = !state.revealedScripts[`q${q.n}`];
+              saveState();
+              renderTest();
+            });
+            ctrl.appendChild(revBtn);
+          }
+
+          dlgWrap.appendChild(ctrl);
+          card.appendChild(dlgWrap);
+        }
+
+        // Stem
+        const stem = document.createElement("div");
+        stem.className = "q-stem";
+        if (q.sec === "sec3") {
+          stem.innerHTML = `<span class="q-num">${q.n}.</span> ${formatSec3Sentence(q)}`;
+          stem.querySelectorAll(".err-span").forEach((span) => {
+            span.addEventListener("click", () => {
+              selectAnswer(q.n, span.dataset.opt);
+            });
+          });
+        } else {
+          stem.innerHTML = `<span class="q-num">${q.n}.</span> ${formatRichText(q.text)}`;
+        }
+        card.appendChild(stem);
+
+        // Options
+        const letters = ["A", "B", "C", "D"];
+        const optsContainer = document.createElement("div");
+        optsContainer.className = q.sec === "sec5" || q.sec === "sec1" ? "options-stack" : "options-grid";
+
+        q.opts.forEach((optText, idx) => {
+          const letter = letters[idx];
+          const label = document.createElement("label");
+          label.className = "opt-label" + (selected === letter ? " selected" : "");
+
+          const radio = document.createElement("input");
+          radio.type = "radio";
+          radio.name = `question_${q.n}`;
+          radio.value = letter;
+          radio.checked = selected === letter;
+          radio.addEventListener("change", () => selectAnswer(q.n, letter));
+
+          const keySpan = document.createElement("span");
+          keySpan.className = "opt-key";
+          keySpan.textContent = `(${letter})`;
+
+          const txtSpan = document.createElement("span");
+          txtSpan.innerHTML = formatRichText(optText);
+
+          label.appendChild(radio);
+          label.appendChild(keySpan);
+          label.appendChild(txtSpan);
+          optsContainer.appendChild(label);
+        });
+
+        card.appendChild(optsContainer);
+        return card;
+      }
+
+      function selectAnswer(qNum, letter) {
+        state.answers[qNum] = letter;
+        saveState(`Q${qNum} saved`);
+
+        // Update card UI in place without full re-render unless filtering unansweredOnly
+        if (state.unansweredOnly) {
+          renderTest();
+        } else {
+          const card = document.getElementById(`q-${qNum}`);
+          if (card) {
+            card.classList.add("answered");
+            card.classList.remove("unanswered-highlight");
+            card.querySelectorAll(".opt-label").forEach((lbl) => {
+              const inp = lbl.querySelector("input");
+              const isMatch = inp && inp.value === letter;
+              lbl.classList.toggle("selected", isMatch);
+              if (inp) inp.checked = isMatch;
+            });
+            card.querySelectorAll(".err-span").forEach((sp) => {
+              sp.classList.toggle("selected-span", sp.dataset.opt === letter);
+            });
+          }
+          updateProgressAndExport();
+        }
+      }
+
+      function createStimulusBox(stimKey) {
+        const stim = STIMULI[stimKey];
+        const box = document.createElement("div");
+        box.className = "stimulus-box";
+
+        const header = document.createElement("div");
+        header.className = "stimulus-header";
+
+        const title = document.createElement("div");
+        title.className = "stimulus-title";
+        title.textContent = stim.title;
+        header.appendChild(title);
+
+        const isHidden = state.blindListening && !state.revealedScripts[stimKey];
+        if (state.blindListening) {
+          const revBtn = document.createElement("button");
+          revBtn.type = "button";
+          revBtn.className = "btn";
+          revBtn.textContent = isHidden ? "Reveal Script" : "Hide Script";
+          revBtn.addEventListener("click", () => {
+            state.revealedScripts[stimKey] = !state.revealedScripts[stimKey];
+            saveState();
+            renderTest();
+          });
+          header.appendChild(revBtn);
+        }
+
+        box.appendChild(header);
+
+        const audioSrc = stim.audio || STIMULUS_AUDIO[stimKey];
+        if (audioSrc) {
+          const audioWrap = document.createElement("div");
+          audioWrap.style.marginBottom = "12px";
+          audioWrap.appendChild(createAudioPlayer(audioSrc));
+          box.appendChild(audioWrap);
+        }
+
+        if (isHidden) {
+          const ph = document.createElement("div");
+          ph.className = "hidden-script-placeholder";
+          ph.textContent = "Script hidden (Blind Listening Mode). Play the audio above or click Reveal Script to view the text.";
+          box.appendChild(ph);
+        } else {
+          const body = document.createElement("div");
+          body.className = "stimulus-body";
+          stim.lines.forEach((line) => {
+            const p = document.createElement("p");
+            p.innerHTML = formatRichText(line);
+            body.appendChild(p);
+          });
+          box.appendChild(body);
+        }
+
+        return box;
+      }
+
+      // Main render
+      function renderTest() {
+        const root = document.getElementById("testRoot");
+        root.innerHTML = "";
+
+        const visibleSections = state.activeSection === "all"
+          ? SECTIONS
+          : SECTIONS.filter((s) => s.id === state.activeSection);
+
+        visibleSections.forEach((sec) => {
+          let secQuestions = QUESTIONS.filter((q) => q.sec === sec.id);
+          if (state.unansweredOnly) {
+            secQuestions = secQuestions.filter((q) => !state.answers[q.n]);
+          }
+
+          const secCard = document.createElement("section");
+          secCard.className = "section-card";
+          secCard.id = sec.id;
+
+          const header = document.createElement("div");
+          header.className = "section-header";
+          const headerText = document.createElement("div");
+          headerText.innerHTML = `<h2>${sec.title}</h2><p class="section-directions">${sec.directions}</p>`;
+          header.appendChild(headerText);
+          secCard.appendChild(header);
+
+          if (sec.id === "sec1") {
+            const listenBar = document.createElement("div");
+            listenBar.className = "listening-controls";
+
+            const blindBtn = document.createElement("button");
+            blindBtn.type = "button";
+            blindBtn.className = "btn" + (state.blindListening ? " btn-active" : "");
+            blindBtn.textContent = state.blindListening ? "Blind Listening Mode: ON (Scripts Hidden)" : "Blind Listening Mode: OFF (Scripts Visible)";
+            blindBtn.addEventListener("click", () => {
+              state.blindListening = !state.blindListening;
+              saveState();
+              renderTest();
+            });
+            listenBar.appendChild(blindBtn);
+
+            const note = document.createElement("span");
+            note.style.color = "var(--text-muted)";
+            note.textContent = "Tip: Enable Blind Listening Mode and play the audio tracks to practice without reading ahead.";
+            listenBar.appendChild(note);
+            secCard.appendChild(listenBar);
+          }
+
+          if (secQuestions.length === 0) {
+            const msg = document.createElement("div");
+            msg.className = "empty-filter-msg";
+            msg.textContent = "All questions in this section have been answered.";
+            secCard.appendChild(msg);
+            root.appendChild(secCard);
+            return;
+          }
+
+          if (sec.id === "sec1") {
+            let currentPart = null;
+            let currentStim = null;
+            secQuestions.forEach((q) => {
+              if (q.part !== currentPart) {
+                currentPart = q.part;
+                const pt = document.createElement("div");
+                pt.className = "part-title";
+                pt.textContent = currentPart;
+                secCard.appendChild(pt);
+              }
+              if (q.stim && q.stim !== currentStim) {
+                currentStim = q.stim;
+                secCard.appendChild(createStimulusBox(q.stim));
+              }
+              secCard.appendChild(createQuestionCard(q));
+            });
+          } else if (sec.id === "sec5") {
+            const passageKeys = ["p1", "p2", "p3", "p4", "p5", "p6"];
+            passageKeys.forEach((pk) => {
+              const pQuestions = secQuestions.filter((q) => q.stim === pk);
+              if (pQuestions.length === 0) return;
+
+              const stim = STIMULI[pk];
+              const group = document.createElement("div");
+              group.className = "reading-group";
+
+              const title = document.createElement("h3");
+              title.className = "reading-group-title";
+              title.textContent = stim.title;
+              group.appendChild(title);
+
+              const split = document.createElement("div");
+              split.className = "reading-split";
+
+              const passagePane = document.createElement("div");
+              passagePane.className = "passage-pane";
+              stim.paragraphs.forEach((para) => {
+                const p = document.createElement("p");
+                p.innerHTML = formatRichText(para);
+                passagePane.appendChild(p);
+              });
+
+              const qPane = document.createElement("div");
+              pQuestions.forEach((q) => qPane.appendChild(createQuestionCard(q)));
+
+              split.appendChild(passagePane);
+              split.appendChild(qPane);
+              group.appendChild(split);
+              secCard.appendChild(group);
+            });
+          } else {
+            secQuestions.forEach((q) => {
+              secCard.appendChild(createQuestionCard(q));
+            });
+          }
+
+          root.appendChild(secCard);
+        });
+
+        updateProgressAndExport();
+      }
+
+      // Jump to next unanswered question
+      function jumpToNextUnanswered() {
+        const nextQ = QUESTIONS.find((q) => !state.answers[q.n]);
+        if (!nextQ) {
+          document.getElementById("exportCard").scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+        if (state.activeSection !== "all" && state.activeSection !== nextQ.sec) {
+          state.activeSection = nextQ.sec;
+          saveState();
+          renderTest();
+        }
+        const el = document.getElementById(`q-${nextQ.n}`);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          el.classList.add("unanswered-highlight");
+          setTimeout(() => el.classList.remove("unanswered-highlight"), 2200);
+        }
+      }
+
+      // Export complete .txt file
+      function exportTxtFile() {
+        if (getAnsweredCount() < QUESTIONS.length) {
+          alert("Please answer all 300 questions before exporting.");
+          return;
+        }
+
+        const letters = ["A", "B", "C", "D"];
+        const lines = [];
+        lines.push("====================================================================");
+        lines.push("COMPREHENSIVE EPT/TOEFL-LEVEL ENGLISH PRACTICE TEST (300 QUESTIONS)");
+        lines.push("COMPLETED USER SUBMISSION EXPORT");
+        lines.push("====================================================================");
+        lines.push(`Exported At: ${new Date().toISOString()}`);
+        lines.push(`Total Answered: 300 / 300`);
+        lines.push(`Elapsed Study Time: ${formatTime(state.elapsedSeconds)}`);
+        lines.push("Note: No answer keys are provided in this file. Submit this file to an LLM");
+        lines.push("(e.g., aistudio.google.com or claude.ai) for scoring and explanations.");
+        lines.push("");
+
+        SECTIONS.forEach((sec) => {
+          lines.push("--------------------------------------------------------------------");
+          lines.push(sec.title.toUpperCase());
+          lines.push("--------------------------------------------------------------------");
+          lines.push("");
+
+          const secQuestions = QUESTIONS.filter((q) => q.sec === sec.id);
+          let lastPart = null;
+          let lastStim = null;
+
+          secQuestions.forEach((q) => {
+            if (q.part && q.part !== lastPart) {
+              lastPart = q.part;
+              lines.push(`### ${q.part}`);
+              lines.push("");
+            }
+
+            if (q.stim && q.stim !== lastStim) {
+              lastStim = q.stim;
+              const stim = STIMULI[q.stim];
+              lines.push(`[CONTEXT: ${stim.title}]`);
+              const blocks = stim.lines || stim.paragraphs;
+              blocks.forEach((b) => {
+                lines.push(stripMarkdown(b));
+                lines.push("");
+              });
+            }
+
+            if (q.dialogue) {
+              q.dialogue.forEach((d) => lines.push(stripMarkdown(d)));
+            }
+
+            if (q.sec === "sec3") {
+              // Preserve (A) **phrase** markers clearly so the LLM sees the exact marked segments
+              lines.push(`${q.n}. ${q.text}`);
+            } else {
+              lines.push(`${q.n}. ${stripMarkdown(q.text)}`);
+            }
+
+            const optsStr = q.opts.map((o, idx) => `(${letters[idx]}) ${stripMarkdown(o)}`).join("  ");
+            lines.push(`Options: ${optsStr}`);
+
+            const chosenLetter = state.answers[q.n];
+            const chosenIdx = letters.indexOf(chosenLetter);
+            const chosenText = chosenIdx >= 0 ? stripMarkdown(q.opts[chosenIdx]) : "";
+            lines.push(`User's Answer: (${chosenLetter}) ${chosenText}`);
+            lines.push("");
+          });
+        });
+
+        const blob = new Blob([lines.join("\n")], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        const dateStamp = new Date().toISOString().slice(0, 10);
+        a.href = url;
+        a.download = `ept-toefl-practice-test-answers-${dateStamp}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+
+      // Wire toolbar controls
+      document.getElementById("timerToggleBtn").addEventListener("click", toggleTimer);
+
+      const filterBtn = document.getElementById("filterUnansweredBtn");
+      filterBtn.addEventListener("click", () => {
+        state.unansweredOnly = !state.unansweredOnly;
+        filterBtn.classList.toggle("btn-active", state.unansweredOnly);
+        saveState();
+        renderTest();
+      });
+
+      document.getElementById("jumpNextBtn").addEventListener("click", jumpToNextUnanswered);
+
+      document.getElementById("resetBtn").addEventListener("click", () => {
+        const answered = getAnsweredCount();
+        if (!confirm(`Reset all saved answers (${answered}/300) and timer? This cannot be undone.`)) {
+          return;
+        }
+        stopAllAudio();
+        if (timerInterval) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+        }
+        state = {
+          answers: {},
+          activeSection: "all",
+          unansweredOnly: false,
+          blindListening: false,
+          revealedScripts: {},
+          elapsedSeconds: 0,
+          timerRunning: false
+        };
+        filterBtn.classList.remove("btn-active");
+        saveState("Progress reset");
+        updateTimerUI();
+        renderTest();
+      });
+
+      document.getElementById("copyPromptBtn").addEventListener("click", async () => {
+        const promptText = document.getElementById("llmPromptText").textContent;
+        const btn = document.getElementById("copyPromptBtn");
+        try {
+          await navigator.clipboard.writeText(promptText);
+          btn.textContent = "Copied!";
+          setTimeout(() => (btn.textContent = "Copy Prompt"), 1800);
+        } catch {
+          alert("Copy failed. Please select and copy the prompt manually.");
+        }
+      });
+
+      // Initialize
+      loadState();
+      filterBtn.classList.toggle("btn-active", state.unansweredOnly);
+      updateTimerUI();
+      renderTest();
+    })();
+  </script>
+</body>
+</html>
